@@ -1,0 +1,97 @@
+/* globals.css */
+
+/* Importaciones base de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.marquee {
+  /* Hacemos que el contenedor sea el doble de ancho para albergar dos copias */
+  width: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Dropdown flecha */
+.dropdown-menu {
+  position: relative;
+}
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+}
+
+/* Keyframes para flotación */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Clases de animación */
+.animate-floatUp {
+  animation: floatUp 4s ease-in-out infinite;
+}
+.animate-floatDown {
+  animation: floatDown 4s ease-in-out infinite;
+}
+
+/* Ocultar scrollbar en navegadores modernos */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Variables de color */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Estilo base del body */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
