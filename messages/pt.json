@@ -1,0 +1,127 @@
+{
+  "header": {
+    "home": "Inicio",
+    "agency": "Agência",
+    "clients": "Clientes",
+    "results": "Resultados",
+    "awards": "Prêmios",
+    "language": "Idioma",
+    "aboutUs": "Sobre nós",
+    "services": "Serviços",
+    "press": "Imprensa",
+    "events": "Eventos",
+    "gallery": "Galeria",
+    "contact": "Contato",
+    "spanish": "Espanhol",
+    "english": "Inglês",
+    "portuguese": "Português"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "text1": "Eu sou Laura Forero, empreendedora e especialista em relações públicas apaixonada pela criação de comunidades e fortalecimento de ecossistemas para startups, fundos de VC e entidades públicas ou privadas na Colômbia e na América Latina.",
+    "text2": "Com mais de 9 anos de experiência em relações públicas, free press, produção de eventos de alto impacto, estratégias de comunicação e programas de alto impacto, aprendi a entender detalhadamente as necessidades do setor tech e a levar as marcas para um novo patamar.",
+    "text3": "Sou cofundadora da Colombia Tech Week e líder ativa da Wondertech Latam.",
+    "lensPRInfo": {
+      "title": "Mais sobre a LENS PR",
+      "paragraph1": "A LENS PR é uma agência boutique de relações públicas especializada no setor de tecnologia, com operações em mais de 10 países na América Latina, nos EUA e na Espanha. Conectamos fundadores, startups e fundos de VC com seus públicos ou clientes por meio de estratégias tailor-made de imprensa, comunicação, eventos de alto nível e alianças estratégicas.",
+      "paragraph2": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos personalizados, nos consolidamos como atores relevantes no ecossistema de tecnologia na Colômbia e na América Latina.",
+      "paragraph3": "Empresas globais como DEEL, Blackrock, startups promissoras da Forbes como Yuno e Celes, e VCs de destaque como FEMSA Ventures, Newtopia VC, Latitud, além do evento mais importante do ecossistema local, o Colombia Tech Week, confiaram em nós."
+    }
+  },
+  "services": {
+    "clientsIndustries": "Clientes e Indústrias",
+    "pressVisibility": "Imprensa e visibilidade",
+    "description": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos criados sob medida, nós nos consolidamos como atores relevantes do ecossistema tech na Colômbia e na LATAM. Empresas globais como DEEL, Blackrock, startups promissoras da Forbes como Yuno e Celes, VCs relevantes como FEMSA Ventures, Newtopia VC, Latitud, e o evento mais importante do ecossistema local, o Colombia Tech Week, confiaram em nós.",
+    "seeAllClients": "VER TODOS OS CLIENTES",
+    "prev": "Anterior",
+    "next": "Próximo"
+  },
+  "hero": {
+    "title": "Visibilidade garantida",
+    "subtitle": "Na LATAM",
+    "videoUrl": "/videos/video-hero.mp4"
+  },
+  "paragraph": {
+    "text": "LENS PR é uma agência boutique de relações públicas especializada no setor de tecnologia, com operações em mais de 10 países na América Latina, EUA e Espanha. Conectamos fundadores, startups e fundos de VC com seus públicos ou clientes por meio de estratégias tailor-made de imprensa, comunicação, eventos de alto nível e alianças estratégicas.",
+    "letsConnect": "VAMOS CONECTAR",
+    "moreAboutUs": "MAIS SOBRE NÓS"
+  },
+  "credibility": {
+    "title": "CONSTRUA CONFIANÇA E CREDIBILIDADE",
+    "text": "Oferecemos serviços personalizados, como conteúdo criativo, seu próprio ecossistema de cobertura de imprensa e recomendações para divulgar sua história.",
+    "buttonLabel": "Agende uma consultoria gratuita de 30 minutos"
+  },
+  "travelHospitality": {
+    "headerTitle": "Conquistas & Indústrias",
+    "galleryItems": {
+      "designContentTitle": "CONTEÚDO GRÁFICO",
+      "designContentDescription": "Criamos histórias envolventes para hotéis de luxo, resorts e restaurantes, engajando clientes com colocações estratégicas de mídia e experiências.",
+      "freePressTitle": "FREE PRESS",
+      "freePressDescription": "Apresentamos locais deslumbrantes com campanhas experimentais, divulgação por influenciadores e cobertura de mídia imersiva.",
+      "eventsTitle": "EVENTOS PERSONALIZADOS",
+      "eventsDescription": "Elevamos marcas premium através de storytelling sob medida, estratégias de RP direcionadas e experiências de marca inesquecíveis."
+    },
+    "stats": {
+      "publications": "Publicações",
+      "eventsCreated": "Eventos Criados",
+      "clients": "Clientes"
+    },
+    "client": "Cliente",
+    "leftColumn": {
+      "clientsIndustries": "Clientes & Indústrias",
+      "pressVisibility": "Imprensa & Visibilidade",
+      "description": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos personalizados, consolidamos nossa posição como atores relevantes no ecossistema tech na Colômbia e na LATAM. Empresas globais como DEEL, Blackrock, startups promissoras da Forbes como Yuno e Celes, VCs de destaque como FEMSA Ventures, Newtopia VC, Latitud, e o evento mais importante do ecossistema local, Colombia Tech Week, confiaram em nós.",
+      "seeAllClients": "VER TODOS OS CLIENTES"
+    }
+  },
+  "footer": {
+    "brand": "LENS PR",
+    "description": "LENS PR é uma agência boutique de relações públicas especializada no setor de tecnologia, com operações em mais de 10 países na LATAM, EUA e Espanha. Conectamos fundadores, startups e fundos de VC por meio de estratégias tailor-made de imprensa, comunicação, eventos de alto nível e alianças estratégicas.",
+    "quickLinks": {
+      "title": "Links Rápidos",
+      "home": "Início",
+      "about": "Sobre Nós",
+      "services": "Serviços",
+      "portfolio": "Portfólio",
+      "contact": "Contato"
+    },
+    "services": {
+      "title": "Serviços",
+      "design": "Design de Conteúdo",
+      "freePress": "Free Press",
+      "events": "Eventos Personalizados"
+    },
+    "contact": {
+      "title": "Contato",
+      "email": "Email: laura@lenspr.com",
+      "phone": "Tel: +1 (123) 456-7890"
+    },
+    "social": {
+      "facebookUrl": "https://www.facebook.com/lenspr",
+      "twitterUrl": "https://twitter.com/lenspr",
+      "linkedinUrl": "https://www.linkedin.com/in/lauramarcelaforero/",
+      "instagramUrl": "https://www.instagram.com/lenspr"
+    },
+    "bottom": "Todos os direitos reservados."
+  },
+  "contact": {
+    "title": "Fale Conosco",
+    "subtitle": "Se você tiver alguma dúvida ou quiser mais informações, envie-nos uma mensagem.",
+    "formTitle": "Envie-nos uma Mensagem",
+    "formDescription": "Preencha o formulário e entraremos em contato o mais breve possível.",
+    "nameLabel": "Nome",
+    "namePlaceholder": "Seu nome completo",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "Como podemos ajudar você?",
+    "sendButton": "Enviar",
+    "contactInfoTitle": "Você Também Pode Nos Encontrar Aqui",
+    "contactInfoSubtitle": "Se preferir falar diretamente ou visitar nosso escritório, aqui estão nossas informações de contato:",
+    "addressLabel": "Endereço",
+    "addressValue": "Rua 123, Cidade, País",
+    "phoneLabel": "Telefone",
+    "phoneValue": "+55 300 000 0000",
+    "emailValue": "info@lenspr.com"
+  }
+}
