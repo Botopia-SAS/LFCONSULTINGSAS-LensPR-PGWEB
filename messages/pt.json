@@ -30,11 +30,19 @@
   },
   "services": {
     "clientsIndustries": "Clientes e Indústrias",
-    "pressVisibility": "Imprensa e visibilidade",
-    "description": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos criados sob medida, nós nos consolidamos como atores relevantes do ecossistema tech na Colômbia e na LATAM. Empresas globais como DEEL, Blackrock, startups promissoras da Forbes como Yuno e Celes, VCs relevantes como FEMSA Ventures, Newtopia VC, Latitud, e o evento mais importante do ecossistema local, o Colombia Tech Week, confiaram em nós.",
+    "pressVisibility": "Imprensa e Visibilidade",
+    "description": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos personalizados, consolidamo-nos como players essenciais no ecossistema tech na Colômbia e na LATAM. Empresas globais como DEEL, Blackrock, startups promissoras da Forbes como Yuno e Celes, VCs de destaque como FEMSA Ventures, Newtopia VC, Latitud, e o Colombia Tech Week, o evento local mais importante, confiaram em nós.",
     "seeAllClients": "VER TODOS OS CLIENTES",
-    "prev": "Anterior",
-    "next": "Próximo"
+    "galleryItems": {
+      "designContentTitle": "DESIGN DE CONTEÚDO GRÁFICO",
+      "designContentDescription": "Criamos designs visuais envolventes que comunicam a essência da sua marca.",
+      "freePressTitle": "FREE PRESS",
+      "freePressDescription": "Destacamos sua marca por meio de cobertura de imprensa estratégica e narrativas criativas.",
+      "eventsTitle": "EVENTOS PERSONALIZADOS",
+      "eventsDescription": "Criamos eventos sob medida que elevam a experiência da sua marca.",
+      "press4Title": "EVENTO DE IMPRENSA",
+      "press4Description": "Eventos de imprensa impactantes que reforçam a credibilidade e o alcance da sua marca."
+    }
   },
   "hero": {
     "title": "Visibilidade garantida",
@@ -123,5 +131,9 @@
     "phoneLabel": "Telefone",
     "phoneValue": "+55 300 000 0000",
     "emailValue": "info@lenspr.com"
+  },
+  "press": {
+    "title": "Notícias",
+    "noNews": "Nenhuma notícia disponível"
   }
 }

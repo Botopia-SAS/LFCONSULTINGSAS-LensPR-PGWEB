@@ -30,11 +30,19 @@
   },
   "services": {
     "clientsIndustries": "Clientes e Industrias",
-    "pressVisibility": "Prensa y visibilidad",
-    "description": "Con +400 publicaciones para nuestros clientes ...",
+    "pressVisibility": "Prensa y Visibilidad",
+    "description": "Con más de 400 publicaciones para nuestros clientes y más de 50 eventos creados a la medida, nos hemos consolidado como actores clave en el ecosistema tech en Colombia y LATAM. Empresas globales como DEEL, Blackrock, startups promesas de Forbes como Yuno y Celes, VCs destacados como FEMSA Ventures, Newtopia VC, Latitud, y Colombia Tech Week, el evento local más importante, han confiado en nosotros.",
     "seeAllClients": "VER TODOS LOS CLIENTES",
-    "prev": "Anterior",
-    "next": "Siguiente"
+    "galleryItems": {
+      "designContentTitle": "DISEÑO DE CONTENIDO GRÁFICO",
+      "designContentDescription": "Creamos diseños visuales que cautivan y comunican la esencia de tu marca.",
+      "freePressTitle": "FREE PRESS",
+      "freePressDescription": "Mostramos tu marca a través de cobertura de prensa estratégica y narrativas creativas.",
+      "eventsTitle": "EVENTOS A MEDIDA",
+      "eventsDescription": "Creamos eventos personalizados que elevan la experiencia de tu marca.",
+      "press4Title": "EVENTO DE PRENSA",
+      "press4Description": "Eventos de prensa impactantes que fortalecen la credibilidad y el alcance de tu marca."
+    }
   },
   "hero": {
     "title": "Visibilidad garantizada",
@@ -123,5 +131,9 @@
     "phoneLabel": "Teléfono",
     "phoneValue": "+57 300 000 0000",
     "emailValue": "info@lenspr.com"
+  },
+  "press": {
+    "title": "Noticias",
+    "noNews": "No hay noticias disponibles"
   }
 }
