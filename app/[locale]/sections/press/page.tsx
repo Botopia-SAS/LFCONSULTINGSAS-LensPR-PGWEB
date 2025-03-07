@@ -2,10 +2,9 @@
 import { getTranslations } from 'next-intl/server';
 import { getNewsByLocale } from '../../(helpers)/getNews';
 
-export default async function PressPage(props: { params: { locale: string } }) {
-  // "Awaiteamos" los parámetros para cumplir con la regla de Next.js
-  const awaitedParams = await Promise.resolve(props.params);
-  const locale = awaitedParams.locale;
+export default async function PressPage(props: { params: Promise<{ locale: string }> }) {
+  const awaitedParams = await props.params;
+  const { locale } = awaitedParams;
   
   // Obtenemos las traducciones para el namespace "press"
   const t = await getTranslations('press');
