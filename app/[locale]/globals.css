@@ -20,6 +20,26 @@
   }
 }
 
+@layer base {
+  /* Para modo claro */
+  .slick-slider .slick-arrow.slick-prev:before,
+  .slick-slider .slick-arrow.slick-next:before {
+    color: black !important;
+    font-size: 1.5rem !important; /* Aumenta si lo necesitas */
+  }
+
+  .slick-arrow {
+    z-index: 50 !important; /* Para asegurarte de que estén al frente */
+  }
+
+  /* Para modo oscuro */
+  .dark .slick-slider .slick-arrow.slick-prev:before,
+  .dark .slick-arrow.slick-next:before {
+    color: white !important;
+  }
+}
+
+
 /* Dropdown flecha */
 .dropdown-menu {
   position: relative;

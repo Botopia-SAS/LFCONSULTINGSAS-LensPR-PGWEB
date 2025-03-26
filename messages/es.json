@@ -46,12 +46,12 @@
   },
   "hero": {
     "title": "Visibilidad garantizada",
-    "subtitle": "En LATAM",
+    "subtitle": "En el sector de startups, tecnología y finanzas",
     "videoUrl": "/videos/video-hero.mp4"
   },
   "paragraph": {
-    "text": "LENS PR es agencia boutique de relaciones públicas especializada en el sector tech con operación en más +10 países de LATAM, US y España. Nos dedicamos a conectar founders, startups y fondos de VC con sus públicos o clientes a través de estrategias Tailor Made de prensa, comunicación, eventos de alto nivel y alianzas estratégicas.",
-    "letsConnect": "CONECTÉMONOS",
+    "text": "LENS PR es una fimra de relaciones públicas especializada en el sector de tecnología, finanzas y capital de riesgo con operación en más +12 países de LATAM, US y España. Nos dedicamos a conectar founders, startups y fondos de VC con sus públicos o clientes a través de estrategias Tailor Made de prensa, comunicación, eventos de alto nivel y alianzas estratégicas.",
+    "letsConnect": "Agenda hoy",
     "moreAboutUs": "SOBRE NOSOTROS"
   },
   "credibility": {
@@ -83,35 +83,20 @@
     }
   },
   "footer": {
-    "brand": "LENS PR",
-    "description": "LENS PR es una agencia boutique de relaciones públicas especializada en el sector tech, con operación en más de 10 países en LATAM, US y España. Conectamos founders, startups y fondos de VC a través de estrategias Tailor Made de prensa, comunicación, eventos de alto nivel y alianzas estratégicas.",
-    "quickLinks": {
-      "title": "Enlaces rápidos",
-      "home": "Inicio",
-      "about": "Acerca de",
-      "services": "Servicios",
-      "portfolio": "Portafolio",
-      "contact": "Contacto"
-    },
-    "services": {
-      "title": "Servicios",
-      "design": "Diseño de Contenido",
-      "freePress": "Free Press",
-      "events": "Eventos a Medida"
-    },
-    "contact": {
-      "title": "Contacto",
-      "email": "Email: laura@lenspr.com",
-      "phone": "Tel: +1 (123) 456-7890"
-    },
-    "social": {
-      "facebookUrl": "https://www.facebook.com/lenspr",
-      "twitterUrl": "https://twitter.com/lenspr",
-      "linkedinUrl": "https://www.linkedin.com/in/lauramarcelaforero/",
-      "instagramUrl": "https://www.instagram.com/lenspr"
-    },
+    "ctaTitle": "Mantente Conectado con Nosotros",
+    "ctaSubtitle": "Únete a nuestra comunidad y no te pierdas ninguna actualización",
+    "ctaButton": "Suscríbete Ahora",
+    "brand": "TuMarca",
+    "brandDescription": "TuMarca se compromete a ofrecer el mejor servicio y calidad.",
+    "quickLinks": "Enlaces Rápidos",
+    "about": "Sobre Nosotros",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "blog": "Blog",
+    "followUs": "Síguenos",
     "bottom": "Todos los derechos reservados."
-  },
+  }
+  ,
   "contact": {
     "title": "Contáctanos",
     "subtitle": "Si tienes alguna pregunta o deseas más información, envíanos un mensaje.",
