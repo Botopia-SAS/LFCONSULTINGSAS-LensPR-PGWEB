@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import CredibilitySection from "@/components/CredibilitySection";
 import WorksSection from "@/components/WorksSection";
 import Paragraph from "@/components/paragraph";
+import TravelHospitalityCarousel from "@/components/TravelHospitalityCarousel";
 
 export default function HomePage() {
   const t = useTranslations("hero"); // <--- Obtenemos las traducciones del namespace "hero"
@@ -26,6 +27,7 @@ export default function HomePage() {
       <Paragraph />
       <CredibilitySection />
       <WorksSection />
+      <TravelHospitalityCarousel />
     </main>
   );
 }

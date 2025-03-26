@@ -5,8 +5,10 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export default function TravelHospitalitySection() {
+  // Hook de traducciones (si usas next-intl)
   const t = useTranslations("travelHospitality");
 
+  // Ejemplo de items para el “carrusel” interno
   const galleryItems = [
     {
       src: "/images/diseñocontenidografico.png",
@@ -79,60 +81,6 @@ export default function TravelHospitalitySection() {
               />
             </div>
           ))}
-        </div>
-      </div>
-
-      {/* Sección inferior: Texto y "carrusel" de imágenes */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-8 py-16">
-        <div className="flex flex-col md:flex-row items-start justify-between gap-8">
-          {/* Columna izquierda: Texto */}
-          <div className="w-full md:w-1/2">
-            <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mt-2">
-              {t("leftColumn.pressVisibility")}
-            </h2>
-            <p className="mt-4 text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-3xl">
-              {t("leftColumn.description")}
-            </p>
-            <a
-              href="#"
-              className="inline-block mt-6 text-sm font-semibold text-black dark:text-white hover:text-orange-400 transition-colors"
-            >
-              {t("leftColumn.seeAllClients")}
-            </a>
-          </div>
-
-          {/* Columna derecha: "Carrusel" en escritorio */}
-          <div className="w-full md:w-1/2 flex flex-col md:flex-row gap-4">
-            {galleryItems.map((item, index) => (
-              <div
-                key={index}
-                className="flex-1 relative group overflow-hidden"
-              >
-                <Image
-                  src={item.src}
-                  alt={item.title}
-                  width={320}
-                  height={370}
-                  className="rounded-lg shadow-lg object-cover w-full 
-                             transition-transform duration-300 
-                             group-hover:scale-105"
-                />
-                {/* Overlay en hover */}
-                <div
-                  className="absolute inset-0 flex flex-col justify-center items-center
-                             bg-black bg-opacity-60 text-center p-4
-                             opacity-0 group-hover:opacity-100 transition duration-300"
-                >
-                  <h4 className="text-lg font-bold text-white uppercase">
-                    {item.title}
-                  </h4>
-                  <p className="text-white text-sm mt-2">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
