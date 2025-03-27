@@ -104,15 +104,18 @@
     "ctaTitle": "Mantenha-se Conectado Conosco",
     "ctaSubtitle": "Junte-se à nossa comunidade e não perca nenhuma atualização",
     "ctaButton": "Assine Agora",
-    "brand": "SuaMarca",
-    "brandDescription": "SuaMarca se compromete a oferecer o melhor serviço e qualidade.",
+    "brand": "Lens PR",
+    "brandDescription": "Lens PR se compromete a oferecer o melhor serviço e qualidade.",
     "quickLinks": "Links Rápidos",
     "about": "Sobre Nós",
     "services": "Serviços",
     "contact": "Contato",
     "blog": "Blog",
     "followUs": "Siga-nos",
-    "bottom": "Todos os direitos reservados."
+    "bottom": "Todos os direitos reservados.",
+    "address": "CR 20 A 172 30, Bogotá, Colombia",
+    "phone": "+57 301 6953041",
+    "email": "laura@lenspr.com"
   },
   "contact": {
     "title": "Fale Conosco",
@@ -129,7 +132,7 @@
     "contactInfoTitle": "Você Também Pode Nos Encontrar Aqui",
     "contactInfoSubtitle": "Se preferir falar diretamente ou visitar nosso escritório, aqui estão nossas informações de contato:",
     "addressLabel": "Endereço",
-    "addressValue": "BRR LA URIBE CR 20 A 172 30, Bogotá, Colombia",
+    "addressValue": "BRR LA URIBE CR 20 A 172 30, Bogotá, Colombia",
     "phoneLabel": "Telefone",
     "phoneValue": "+57 301 6953041",
     "emailValue": "info@lenspr.com"

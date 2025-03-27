@@ -104,15 +104,18 @@
     "ctaTitle": "Mantente Conectado con Nosotros",
     "ctaSubtitle": "Únete a nuestra comunidad y no te pierdas ninguna actualización",
     "ctaButton": "Suscríbete Ahora",
-    "brand": "TuMarca",
-    "brandDescription": "TuMarca se compromete a ofrecer el mejor servicio y calidad.",
+    "brand": "Lens PR",
+    "brandDescription": "Lens PR se compromete a ofrecer el mejor servicio y calidad.",
     "quickLinks": "Enlaces Rápidos",
     "about": "Sobre Nosotros",
     "services": "Servicios",
     "contact": "Contacto",
     "blog": "Blog",
     "followUs": "Síguenos",
-    "bottom": "Todos los derechos reservados."
+    "bottom": "Todos los derechos reservados.",
+    "address": "CR 20 A 172 30, Bogotá, Colombia",
+    "phone": "+57 301 6953041",
+    "email": "laura@lenspr.com"
   },
   "contact": {
     "title": "Contáctanos",
@@ -129,7 +132,7 @@
     "contactInfoTitle": "También puedes encontrarnos aquí",
     "contactInfoSubtitle": "Si prefieres hablar directamente o visitar nuestras oficinas, estos son nuestros datos de contacto:",
     "addressLabel": "Dirección",
-    "addressValue": "BRR LA URIBE CR 20 A 172 30, Bogotá, Colombia",
+    "addressValue": "CR 20 A 172 30, Bogotá, Colombia",
     "phoneLabel": "Teléfono",
     "phoneValue": "+57 301 6953041",
     "emailValue": "info@lenspr.com"

@@ -46,28 +46,25 @@ export default function EventCard({
             {longText}
           </Button>
         )}
-        {item.location && (
-          <p className="text-xs text-gray-500 dark:text-gray-400 italic">
-            {item.location}
-          </p>
-        )}
-        {item.date_time && (
-          <p className="text-xs text-gray-500 dark:text-gray-400 italic">
-            {new Date(item.date_time).toLocaleDateString("en-US", {
-              timeZone: "UTC",
-            })}
-          </p>
-        )}
-        {item.cost && (
-          <p className="text-xs text-gray-500 dark:text-gray-400 italic">
-            {item.cost}
-          </p>
-        )}
-        {item.duration && (
-          <p className="text-xs text-gray-500 dark:text-gray-400 italic">
-            {item.duration} {durationText}
-          </p>
-        )}
+        <div className="grid grid-cols-2 gap-2 text-xs text-gray-500 dark:text-gray-400 italic">
+          {item.location && <p className="">{item.location}</p>}
+          {item.date_time && (
+            <p className="">
+              {new Date(item.date_time).toLocaleDateString("en-US", {
+                timeZone: "UTC",
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+              })}
+            </p>
+          )}
+          {item.cost && <p className="">{item.cost}</p>}
+          {item.duration && (
+            <p className="">
+              {item.duration} {durationText}
+            </p>
+          )}
+        </div>
       </div>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-lg max-h-[80vh] overflow-y-auto">

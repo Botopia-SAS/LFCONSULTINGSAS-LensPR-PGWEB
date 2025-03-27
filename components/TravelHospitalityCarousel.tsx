@@ -82,7 +82,7 @@ export default function TravelHospitalityCarousel() {
     speed: 500, // Velocidad de transición
     slidesToShow: 1, // Un slide a la vez
     slidesToScroll: 1, // Un slide por avance
-    autoplay: false, // Autoplay activado
+    autoplay: true, // Autoplay activado
     autoplaySpeed: 4000, // Cambio cada 4 segundos
   };
 

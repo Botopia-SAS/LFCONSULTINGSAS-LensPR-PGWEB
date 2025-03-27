@@ -50,7 +50,7 @@ export default function TravelHospitalitySection() {
             {/* Estadísticas */}
             <div className="grid grid-cols-3 gap-4 text-center text-zinc-900 dark:text-white mt-8">
               <div>
-                <h2 className="text-3xl font-bold">+700</h2>
+                <h2 className="text-3xl font-bold">+650</h2>
                 <p className="text-lg font-semibold">{t("stats.publications")}</p>
               </div>
               <div>
