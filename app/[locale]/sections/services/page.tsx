@@ -32,11 +32,6 @@ export default function ServicesSection() {
       title: t("galleryItems.eventsTitle"),
       description: t("galleryItems.eventsDescription"),
     },
-    {
-      src: "/images/press-4.jpg",
-      title: t("galleryItems.press4Title"), // O usa otro alias
-      description: t("galleryItems.press4Description"),
-    },
   ];
 
   // Número de slides a mostrar en desktop (3)

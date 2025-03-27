@@ -30,7 +30,7 @@ export default async function RootLayout({
             rel="stylesheet"
           />
         </head>
-        <body className="flex flex-col h-[100dvh] font-roboto">
+        <body className="flex flex-col h-[100dvh] font-roboto bg-white dark:bg-zinc-900 dark:text-white">
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />

@@ -34,9 +34,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between py-2 bg-white dark:bg-zinc-900 text-lg relative z-50 dark:text-white">
-      <div>
-      </div>
+    <nav className="flex items-center justify-around py-2 bg-white dark:bg-zinc-900 text-lg relative z-50 dark:text-white">
 
         <Link href={`/${currentLanguage}`}>
           <img
@@ -77,7 +75,7 @@ export default function Navbar() {
         {/* CLIENTS (sin dropdown) */}
         <li>
           <a
-            href={`/${currentLanguage}/sections/services`}
+            href={`/${currentLanguage}/sections/clients`}
             className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300"
           >
             {t("clients")}
@@ -176,8 +174,6 @@ export default function Navbar() {
           {t("contact")}
         </button>
       </div>
-
-      <div></div>
 
       {/* Ícono Hamburguesa (Mobile only) */}
       <button

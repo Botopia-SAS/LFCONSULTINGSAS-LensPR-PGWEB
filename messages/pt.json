@@ -67,7 +67,19 @@
       "freePressTitle": "FREE PRESS",
       "freePressDescription": "Apresentamos locais deslumbrantes com campanhas experimentais, divulgação por influenciadores e cobertura de mídia imersiva.",
       "eventsTitle": "EVENTOS PERSONALIZADOS",
-      "eventsDescription": "Elevamos marcas premium através de storytelling sob medida, estratégias de RP direcionadas e experiências de marca inesquecíveis."
+      "eventsDescription": "Elevamos marcas premium através de storytelling sob medida, estratégias de RP direcionadas e experiências de marca inesquecíveis.",
+      "conferencesAndCongressesTitle": "CONFERÊNCIAS E CONGRESSOS",
+      "conferencesAndCongressesDescription": "Organização de encontros profissionais com palestrantes renomados.",
+      "productsReleasesTitle": "LANÇAMENTOS DE PRODUTOS",
+      "productsReleasesDescription": "Apresentação de novos produtos em eventos exclusivos.",
+      "brandExpiriencesTitle": "EXPERIÊNCIAS DE MARCA",
+      "brandExpiriencesDescription": "Criação de experiências únicas para conectar com o público.",
+      "fundPositioningTitle": "POSICIONAMENTO PARA FUNDOS DE VC E STARTUPS",
+      "fundPositioningDescription": "Criamos narrativas estratégicas para atrair investidores, gerar confiança e se destacar no setor.",
+      "financialInnovationForumsAndSummitsTitle": "FÓRUNS E CÚPULAS DE INOVAÇÃO FINANCEIRA",
+      "financialInnovationForumsAndSummitsDescription": "Organizamos espaços de alto nível onde líderes do setor de tecnologia e financeiro podem se conectar e gerar novas oportunidades.",
+      "strategicAlliancesAndHighImpactNetworkingTitle": "ALIANÇAS ESTRATÉGICAS E NETWORKING DE ALTO IMPACTO",
+      "strategicAlliancesAndHighImpactNetworkingDescription": "Facilitamos conexões chave entre startups, corporações e investidores, acelerando o crescimento e a expansão global."
     },
     "stats": {
       "publications": "Publicações",
@@ -79,7 +91,13 @@
       "clientsIndustries": "Clientes & Indústrias",
       "pressVisibility": "Imprensa & Visibilidade",
       "description": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos personalizados, consolidamos nossa posição como atores relevantes no ecossistema tech na Colômbia e na LATAM. Empresas globais como DEEL, Blackrock, startups promissoras da Forbes como Yuno e Celes, VCs de destaque como FEMSA Ventures, Newtopia VC, Latitud, e o evento mais importante do ecossistema local, Colombia Tech Week, confiaram em nós.",
-      "seeAllClients": "VER TODOS OS CLIENTES"
+      "seeAllClients": "VER TODOS OS CLIENTES",
+      "corporateEvents": "Eventos Corporativos",
+      "corporateEventsDescription": "Criamos experiências inovadoras para fortalecer a conexão entre sua marca e seu público.",
+      "seeAllEvents": "VER TODOS OS EVENTOS",
+      "tailorMadeProyects": "Projetos Sob Medida",
+      "tailorMadeProyectsDescription": "Criamos eventos e projetos únicos adaptados às suas necessidades específicas.",
+      "seeAllProjects": "VER TODOS OS PROJETOS"
     }
   },
   "footer": {
@@ -95,8 +113,7 @@
     "blog": "Blog",
     "followUs": "Siga-nos",
     "bottom": "Todos os direitos reservados."
-  }
-  ,
+  },
   "contact": {
     "title": "Fale Conosco",
     "subtitle": "Se você tiver alguma dúvida ou quiser mais informações, envie-nos uma mensagem.",
@@ -119,6 +136,19 @@
   },
   "press": {
     "title": "Notícias",
-    "noNews": "Nenhuma notícia disponível"
+    "noNews": "Nenhuma notícia disponível",
+    "seeMore": "Ver mais"
+  },
+  "clients": {
+    "title": "Clientes",
+    "noClients": "Nenhum cliente disponível",
+    "seeMore": "Ver mais"
+  },
+  "events": {
+    "eventsCreated": "Eventos Criados",
+    "clients": "Clientes",
+    "hours": "Horas",
+    "register": "Registre-se",
+    "seeMore":"Ver mais"
   }
 }
