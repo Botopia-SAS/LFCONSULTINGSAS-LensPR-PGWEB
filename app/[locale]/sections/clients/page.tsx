@@ -19,7 +19,7 @@ export default async function ClientsPage({
           {t("title")}
         </h1>
         {clients.length === 0 ? (
-          <p className="text-center text-gray-700 dark:text-gray-300">
+          <p className="text-center text-2xl text-gray-700 dark:text-gray-300">
             {t("noClients")}
           </p>
         ) : (
