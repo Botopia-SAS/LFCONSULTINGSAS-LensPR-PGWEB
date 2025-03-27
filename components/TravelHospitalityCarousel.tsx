@@ -1,16 +1,11 @@
 "use client";
 
-import React from "react";
-import Slider from "react-slick";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-
-// Componente para slides 2 y 3 (o más)
-import TravelHospitalitySection from "./CredibilitySection";
-
+import Slider from "react-slick";
 // Importa los estilos de react-slick
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 export default function TravelHospitalityCarousel() {
   const t = useTranslations("travelHospitality");
@@ -36,17 +31,17 @@ export default function TravelHospitalityCarousel() {
 
   const slide2Items = [
     {
-      src: "/images/diseñocontenidografico.png",
+      src: "/images/corporate1.png",
       title: t("galleryItems.conferencesAndCongressesTitle"),
       description: t("galleryItems.conferencesAndCongressesDescription"),
     },
     {
-      src: "/images/diseñocontenidografico.png",
+      src: "/images/corporate2.png",
       title: t("galleryItems.productsReleasesTitle"),
       description: t("galleryItems.productsReleasesDescription"),
     },
     {
-      src: "/images/diseñocontenidografico.png",
+      src: "/images/corporate3.png",
       title: t("galleryItems.brandExpiriencesTitle"),
       description: t("galleryItems.brandExpiriencesDescription"),
     },
@@ -54,19 +49,19 @@ export default function TravelHospitalityCarousel() {
 
   const slide3Items = [
     {
-      src: "/images/diseñocontenidografico.png",
+      src: "/images/tailor1.png",
       title: t("galleryItems.fundPositioningTitle"),
       description: t("galleryItems.fundPositioningDescription"),
     },
     {
-      src: "/images/diseñocontenidografico.png",
+      src: "/images/tailor2.png",
       title: t("galleryItems.financialInnovationForumsAndSummitsTitle"),
       description: t(
         "galleryItems.financialInnovationForumsAndSummitsDescription"
       ),
     },
     {
-      src: "/images/diseñocontenidografico.png",
+      src: "/images/tailor3.png",
       title: t("galleryItems.strategicAlliancesAndHighImpactNetworkingTitle"),
       description: t(
         "galleryItems.strategicAlliancesAndHighImpactNetworkingDescription"
@@ -105,12 +100,6 @@ export default function TravelHospitalityCarousel() {
                 <p className="mt-4 text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-3xl">
                   {t("leftColumn.description")}
                 </p>
-                <a
-                  href="#"
-                  className="inline-block mt-6 text-sm font-semibold text-black dark:text-white hover:text-orange-400 transition-colors"
-                >
-                  {t("leftColumn.seeAllClients")}
-                </a>
               </div>
 
               {/* Columna derecha: Galería de imágenes con efecto hover */}
@@ -125,7 +114,7 @@ export default function TravelHospitalityCarousel() {
                       alt={item.title}
                       width={320}
                       height={370}
-                      className="rounded-lg shadow-lg object-cover w-full transition-transform duration-300 group-hover:scale-105"
+                      className="rounded-lg shadow-lg object-contain h-full w-full transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-60 text-center p-4 opacity-0 group-hover:opacity-100 transition duration-300">
                       <h4 className="text-base font-bold text-white uppercase">
@@ -157,12 +146,6 @@ export default function TravelHospitalityCarousel() {
                 <p className="mt-4 text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-3xl">
                   {t("leftColumn.corporateEventsDescription")}
                 </p>
-                <a
-                  href="#"
-                  className="inline-block mt-6 text-sm font-semibold text-black dark:text-white hover:text-orange-400 transition-colors"
-                >
-                  {t("leftColumn.seeAllEvents")}
-                </a>
               </div>
 
               {/* Columna derecha: Galería de imágenes con efecto hover */}
@@ -209,12 +192,6 @@ export default function TravelHospitalityCarousel() {
                 <p className="mt-4 text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-3xl">
                   {t("leftColumn.tailorMadeProyectsDescription")}
                 </p>
-                <a
-                  href="#"
-                  className="inline-block mt-6 text-sm font-semibold text-black dark:text-white hover:text-orange-400 transition-colors"
-                >
-                  {t("leftColumn.seeAllProjects")}
-                </a>
               </div>
 
               {/* Columna derecha: Galería de imágenes con efecto hover */}
