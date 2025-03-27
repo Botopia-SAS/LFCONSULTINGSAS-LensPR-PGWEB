@@ -191,7 +191,7 @@ export default function Navbar() {
             {/* Home */}
             <li>
               <a
-                href="/"
+                href={`/${currentLanguage}`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -206,14 +206,25 @@ export default function Navbar() {
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t("agency")}
+                {t("aboutUs")}
               </a>
             </li>
 
-            {/* Clients */}
+            {/* Services */}
             <li>
               <a
                 href={`/${currentLanguage}/sections/services`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("services")}
+              </a>
+            </li>
+
+             {/* Clients */}
+             <li>
+              <a
+                href={`/${currentLanguage}/sections/clients`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -221,14 +232,25 @@ export default function Navbar() {
               </a>
             </li>
 
-            {/* Results */}
+             {/* Events */}
+             <li>
+              <a
+                href={`/${currentLanguage}/sections/events`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("events")}
+              </a>
+            </li>
+
+            {/* Press */}
             <li>
               <a
                 href={`/${currentLanguage}/sections/press`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t("results")}
+                {t("press")}
               </a>
             </li>
 
