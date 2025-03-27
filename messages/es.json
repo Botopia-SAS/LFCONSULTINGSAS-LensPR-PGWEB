@@ -67,7 +67,19 @@
       "freePressTitle": "FREE PRESS",
       "freePressDescription": "Mostramos lugares impresionantes a través de campañas experienciales, alcance de influencers y cobertura mediática inmersiva.",
       "eventsTitle": "EVENTOS TAILOR MADE",
-      "eventsDescription": "Elevamos marcas premium mediante narrativas personalizadas, estrategias de relaciones públicas dirigidas y experiencias de marca inolvidables."
+      "eventsDescription": "Elevamos marcas premium mediante narrativas personalizadas, estrategias de relaciones públicas dirigidas y experiencias de marca inolvidables.",
+      "conferencesAndCongressesTitle": "CONFERENCIAS Y CONGRESOS",
+      "conferencesAndCongressesDescription": "Organización de encuentros profesionales con speakers de renombre.",
+      "productsReleasesTitle": "LANZAMIENTO DE PRODUCTOS",
+      "productsReleasesDescription": "Presentación de nuevos productos en eventos exclusivos.",
+      "brandExpiriencesTitle": "EXPERIENCIAS DE MARCA",
+      "brandExpiriencesDescription": "Creación de experiencias únicas para conectar con la audiencia.",
+      "fundPositioningTitle": "POSICIONAMIENTO PARA FONDOS",
+      "fundPositioningDescription": "Construimos narrativas estratégicas para atraer inversionistas, generar confianza y destacar en la industria.",
+      "financialInnovationForumsAndSummitsTitle": "FOROS Y CUMBRES DE INNOVACIÓN FINANCIERA",
+      "financialInnovationForumsAndSummitsDescription": "Organizamos espacios de alto nivel donde líderes del sector tecnológico y financiero pueden conectar y generar nuevas oportunidades.",
+      "strategicAlliancesAndHighImpactNetworkingTitle": "ALIANZAS ESTRATÉGICAS Y NETWORKING DE ALTO IMPACTO",
+      "strategicAlliancesAndHighImpactNetworkingDescription": "Facilitamos conexiones clave entre startups, corporativos e inversionistas, acelerando el crecimiento y la expansión global."
     },
     "stats": {
       "publications": "Publicaciones",
@@ -77,9 +89,15 @@
     "client": "Cliente",
     "leftColumn": {
       "clientsIndustries": "Clientes e Industrias",
-      "pressVisibility": "Prensa & visibilidad",
+      "pressVisibility": "Prensa & Medios",
       "description": "Con +400 publicaciones para nuestros clientes y más de 50 eventos creados a la medida, nos hemos consolidado como actores relevantes del ecosistema tech en Colombia y LATAM. Empresas globales como DEEL, Blackrock, startups promesas de Forbes como Yuno y Celes, VCs destacados como FEMSA Ventures, Newtopia VC, Latitud, y el evento más importante del ecosistema local, Colombia Tech Week, han confiado en nosotros.",
-      "seeAllClients": "VER TODOS LOS CLIENTES"
+      "seeAllClients": "VER TODOS LOS CLIENTES",
+      "corporateEvents": "Eventos Corporativos",
+      "corporateEventsDescription": "Diseñamos experiencias innovadoras para fortalecer la conexión entre tu marca y su audiencia.",
+      "seeAllEvents": "VER TODOS LOS EVENTOS",
+      "tailorMadeProyects": "Proyectos a la Medida",
+      "tailorMadeProyectsDescription": "Creamos eventos y proyectos únicos adaptados a tus necesidades específicas.",
+      "seeAllProjects": "VER TODOS LOS PROYECTOS"
     }
   },
   "footer": {
@@ -95,8 +113,7 @@
     "blog": "Blog",
     "followUs": "Síguenos",
     "bottom": "Todos los derechos reservados."
-  }
-  ,
+  },
   "contact": {
     "title": "Contáctanos",
     "subtitle": "Si tienes alguna pregunta o deseas más información, envíanos un mensaje.",
@@ -119,6 +136,19 @@
   },
   "press": {
     "title": "Noticias",
-    "noNews": "No hay noticias disponibles"
+    "noNews": "No hay noticias disponibles",
+    "seeMore": "Ver más"
+  },
+  "clients": {
+    "title": "Clientes",
+    "noClients": "No hay clientes disponibles",
+    "seeMore": "Ver más"
+  },
+  "events": {
+    "title": "Eventos",
+    "noEvents": "No hay eventos disponibles",
+    "hours": "Horas",
+    "register": "Regístrate",
+    "seeMore": "Ver más"
   }
 }

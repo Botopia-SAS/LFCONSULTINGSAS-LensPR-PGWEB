@@ -62,12 +62,24 @@
   "travelHospitality": {
     "headerTitle": "Achivements & Industries",
     "galleryItems": {
-      "designContentTitle": "DISEÑO CONTENIDO GRÁFICO",
+      "designContentTitle": "GRAFIC DESIGN CONTENT",
       "designContentDescription": "We craft compelling stories for luxury hotels, resorts, and restaurants to engage customers with strategic media placements and experiences.",
       "freePressTitle": "FREE PRESS",
       "freePressDescription": "Showcasing breathtaking locations with experiential campaigns, influencer outreach, and immersive media coverage.",
-      "eventsTitle": "EVENTOS TAILOR MADE",
-      "eventsDescription": "Elevating premium brands through bespoke storytelling, targeted PR strategies, and unforgettable brand experiences."
+      "eventsTitle": "TAILOR MADE EVENTS",
+      "eventsDescription": "Elevating premium brands through bespoke storytelling, targeted PR strategies, and unforgettable brand experiences.",
+      "conferencesAndCongressesTitle": "CONFERENCES AND CONGRESSES",
+      "conferencesAndCongressesDescription": "Organization of professional gatherings with renowned speakers.",
+      "productsReleasesTitle": "PRODUCT LAUNCHES",
+      "productsReleasesDescription": "Presentation of new products at exclusive events.",
+      "brandExpiriencesTitle": "BRAND EXPERIENCES",
+      "brandExpiriencesDescription": "Creation of unique experiences to connect with the audience.",
+      "fundPositioningTitle": "POSITIONING FOR VC FUNDS AND STARTUPS",
+      "fundPositioningDescription": "We build strategic narratives to attract investors, build trust, and stand out in the industry.",
+      "financialInnovationForumsAndSummitsTitle": "FINANCIAL INNOVATION FORUMS AND SUMMITS",
+      "financialInnovationForumsAndSummitsDescription": "We organize high-level spaces where leaders from the technology and financial sectors can connect and create new opportunities.",
+      "strategicAlliancesAndHighImpactNetworkingTitle": "STRATEGIC ALLIANCES AND HIGH-IMPACT NETWORKING",
+      "strategicAlliancesAndHighImpactNetworkingDescription": "We facilitate key connections between startups, corporations, and investors, accelerating growth and global expansion."
     },
     "stats": {
       "publications": "Publications",
@@ -79,10 +91,16 @@
       "clientsIndustries": "Clients & Industries",
       "pressVisibility": "Press & Visibility",
       "description": "With over 400 publications for our clients and more than 50 tailor-made events, we have established ourselves as key players in the tech ecosystem in Colombia and LATAM. Global companies like DEEL, Blackrock, Forbes-promising startups such as Yuno and Celes, notable VCs like FEMSA Ventures, Newtopia VC, Latitud, and Colombia Tech Week, the most important local event, have trusted us.",
-      "seeAllClients": "SEE ALL CLIENTS"
+      "seeAllClients": "SEE ALL CLIENTS",
+      "corporateEvents": "Corporate Events",
+      "corporateEventsDescription": "We design innovative experiences to strengthen the connection between your brand and its audience.",
+      "seeAllEvents": "SEE ALL EVENTS",
+      "tailorMadeProyects": "Tailor-Made Projects",
+      "tailorMadeProyectsDescription": "We create unique events and projects tailored to your specific needs.",
+      "seeAllProjects": "SEE ALL PROJECTS"
     }
   },
-  "footer":{
+  "footer": {
     "ctaTitle": "Stay Connected with Us",
     "ctaSubtitle": "Join our community and never miss an update",
     "ctaButton": "Subscribe Now",
@@ -95,8 +113,7 @@
     "blog": "Blog",
     "followUs": "Follow Us",
     "bottom": "All rights reserved."
-  }
-  ,
+  },
   "contact": {
     "title": "Contact Us",
     "subtitle": "If you have any questions or want more information, send us a message.",
@@ -119,6 +136,19 @@
   },
   "press": {
     "title": "News",
-    "noNews": "No news available"
+    "noNews": "No news available",
+    "seeMore": "See more"
+  },
+  "clients": {
+    "title": "Clients",
+    "noClients": "No clients available",
+    "seeMore": "See more"
+  },
+  "events": {
+    "title": "Events",
+    "noEvents": "No events available",
+    "hours": "Hours",
+    "register": "Register",
+    "seeMore": "See more"
   }
 }

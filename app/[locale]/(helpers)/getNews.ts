@@ -1,5 +1,4 @@
-// app/[locale]/(helpers)/getNews.ts
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from "@supabase/supabase-js";
 
 type NewsRow = {
   id: number;
@@ -21,53 +20,40 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export async function getNewsByLocale(locale: string) {
-  let titleColumn: string, descriptionColumn: string, editorialColumn: string;
+  let titleColumn: keyof NewsRow,
+    descriptionColumn: keyof NewsRow,
+    editorialColumn: keyof NewsRow;
 
-  if (locale === 'en') {
-    titleColumn = 'title_english';
-    descriptionColumn = 'description_english';
-    editorialColumn = 'editorial_english';
-  } else if (locale === 'pt') {
-    titleColumn = 'title_portuguese';
-    descriptionColumn = 'description_portuguese';
-    editorialColumn = 'editorial_portuguese';
+  if (locale === "en") {
+    titleColumn = "title_english";
+    descriptionColumn = "description_english";
+    editorialColumn = "editorial_english";
+  } else if (locale === "pt") {
+    titleColumn = "title_portuguese";
+    descriptionColumn = "description_portuguese";
+    editorialColumn = "editorial_portuguese";
   } else {
     // Por defecto 'es'
-    titleColumn = 'title_spanish';
-    descriptionColumn = 'description_spanish';
-    editorialColumn = 'editorial_spanish';
+    titleColumn = "title_spanish";
+    descriptionColumn = "description_spanish";
+    editorialColumn = "editorial_spanish";
   }
 
-  // Construir la cadena de columnas de forma segura
-  const columns = [
-    'id',
-    'media_url',
-    'created_at',
-    titleColumn,
-    descriptionColumn,
-    editorialColumn,
-  ].join(', ');
-
-  // Realizamos la consulta a la tabla "news" y ordenamos por fecha de creación (descendente)
-  // Hacemos un cast de la respuesta para evitar problemas de tipos.
-  const { data, error } = await supabase
-    .from('news')
-    .select(columns) as { data: NewsRow[] | null; error: any };
+  // Obtener todos los datos y manejar la ausencia de columnas
+  const { data, error } = await supabase.from("news").select("*"); // Seleccionamos todas las columnas
 
   if (error) {
-    console.error('Error fetching news:', error);
+    console.error("Error fetching news:", error);
     return [];
   }
 
-  // Mapear la data para renombrar las propiedades de forma consistente
-  const results = (data || []).map((item) => ({
+  // Mapear los datos de manera segura
+  return (data || []).map((item) => ({
     id: item.id,
     mediaUrl: item.media_url,
     createdAt: item.created_at,
-    title: item[titleColumn as keyof NewsRow] as string | null,
-    description: item[descriptionColumn as keyof NewsRow] as string | null,
-    editorial: item[editorialColumn as keyof NewsRow] as string | null,
+    title: item[titleColumn] ?? "Título no disponible",
+    description: item[descriptionColumn] ?? "Descripción no disponible",
+    editorial: item[editorialColumn] ?? null, // Puede ser null si no existe
   }));
-
-  return results;
 }

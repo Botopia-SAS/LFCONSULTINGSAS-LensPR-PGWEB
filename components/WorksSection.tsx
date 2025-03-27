@@ -50,7 +50,7 @@ export default function TravelHospitalitySection() {
             {/* Estadísticas */}
             <div className="grid grid-cols-3 gap-4 text-center text-zinc-900 dark:text-white mt-8">
               <div>
-                <h2 className="text-3xl font-bold">+400</h2>
+                <h2 className="text-3xl font-bold">+700</h2>
                 <p className="text-lg font-semibold">{t("stats.publications")}</p>
               </div>
               <div>
@@ -63,24 +63,6 @@ export default function TravelHospitalitySection() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Grid de clientes */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-8 my-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-items-center">
-          {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className="relative w-full h-32 sm:h-40 md:h-48">
-              <Image
-                src={`/images/client${i + 1}.png`}
-                alt={`${t("client")} ${i + 1}`}
-                layout="fill"
-                objectFit="contain"
-                objectPosition="center"
-                className="rounded"
-              />
-            </div>
-          ))}
         </div>
       </div>
     </section>
