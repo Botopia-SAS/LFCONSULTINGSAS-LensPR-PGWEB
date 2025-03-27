@@ -53,14 +53,14 @@ export default function AboutUsSection() {
               {/* Íconos de contacto */}
               <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
                 <a
-                  href="mailto:laura@example.com"
+                  href="mailto:laura@lenspr.com"
                   className="text-black dark:text-white hover:text-orange-400 dark:hover:text-orange-400 transition"
                   aria-label="Enviar email a Laura"
                 >
                   <Mail className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/laura-forero"
+                  href="https://www.linkedin.com/in/lauramarcelaforero/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black dark:text-white hover:text-orange-400 dark:hover:text-orange-400 transition"
