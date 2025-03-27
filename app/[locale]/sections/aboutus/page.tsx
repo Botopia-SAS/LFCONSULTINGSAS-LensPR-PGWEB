@@ -13,7 +13,7 @@ export default function AboutUsSection() {
   if (!locale) return null;
 
   return (
-    <section key={locale} className="dark:bg-zinc-900 py-28">
+    <section key={locale} className="dark:bg-zinc-900 py-28 text-3xl">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-12 items-start">
           {/* Columna Izquierda: Logo + Información de LENS PR */}
