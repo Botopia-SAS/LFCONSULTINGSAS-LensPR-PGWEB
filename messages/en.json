@@ -129,9 +129,9 @@
     "contactInfoTitle": "You Can Also Find Us Here",
     "contactInfoSubtitle": "If you'd rather speak directly or visit our offices, here is our contact information:",
     "addressLabel": "Address",
-    "addressValue": "Street 123, City, Country",
+    "addressValue": "BRR LA URIBE CR 20 A 172 30, Bogotá, Colombia",
     "phoneLabel": "Phone",
-    "phoneValue": "+1 300 000 0000",
+    "phoneValue": "+57 301 6953041",
     "emailValue": "info@lenspr.com"
   },
   "press": {
@@ -150,5 +150,9 @@
     "hours": "Hours",
     "register": "Register",
     "seeMore": "See more"
+  },
+  "carousel": {
+    "title": "They trusted us",
+    "cta": "I want to be part of LENS PR"
   }
 }
