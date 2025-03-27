@@ -7,7 +7,7 @@ import { getMessages } from "next-intl/server";
 export const metadata = {
   title: "LensPR",
   description:
-    "Agencia boutique de relaciones públicas especializada en el sector tech",
+    "Firma boutique de relaciones públicas especializada en el sector tecnología, startups y finanzas.",
 };
 
 export default async function RootLayout({
