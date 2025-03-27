@@ -56,7 +56,7 @@ export default function Navbar() {
         <li>
           <a
             href={`/${currentLanguage}/sections/aboutus`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300"
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("aboutUs")}
           </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
         <li>
           <a
             href={`/${currentLanguage}/sections/services`}
-            className="block hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("services")}
           </a>
@@ -76,7 +76,7 @@ export default function Navbar() {
         <li>
           <a
             href={`/${currentLanguage}/sections/clients`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300"
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("clients")}
           </a>
@@ -86,7 +86,7 @@ export default function Navbar() {
         <li>
           <a
             href={`/${currentLanguage}/sections/events`}
-            className="block hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("events")}
           </a>
@@ -96,7 +96,7 @@ export default function Navbar() {
         <li>
           <a
             href={`/${currentLanguage}/sections/press`}
-            className="block hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("press")}
           </a>
@@ -192,7 +192,7 @@ export default function Navbar() {
             <li>
               <a
                 href="/"
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300"
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("home")}
@@ -203,7 +203,7 @@ export default function Navbar() {
             <li>
               <a
                 href={`/${currentLanguage}/sections/aboutus`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300"
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("agency")}
@@ -214,7 +214,7 @@ export default function Navbar() {
             <li>
               <a
                 href={`/${currentLanguage}/sections/services`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300"
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("clients")}
@@ -225,7 +225,7 @@ export default function Navbar() {
             <li>
               <a
                 href={`/${currentLanguage}/sections/press`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300"
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("results")}
