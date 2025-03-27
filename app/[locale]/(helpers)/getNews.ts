@@ -27,11 +27,11 @@ export async function getNewsByLocale(locale: string) {
   if (locale === "en") {
     titleColumn = "title_english";
     descriptionColumn = "description_english";
-    editorialColumn = "editorial_english";
+    editorialColumn = "editorial_spanish";
   } else if (locale === "pt") {
     titleColumn = "title_portuguese";
     descriptionColumn = "description_portuguese";
-    editorialColumn = "editorial_portuguese";
+    editorialColumn = "editorial_spanish";
   } else {
     // Por defecto 'es'
     titleColumn = "title_spanish";

@@ -28,15 +28,13 @@ export default function NewsCard({ item, text }: { item: any; text: string }) {
         <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 flex-1">
           {truncatedDescription}
         </p>
+        <p className="text-xs text-gray-500 dark:text-gray-400 italic">
+          {item.editorial}
+        </p>
         {item.description.length > 150 && (
           <Button variant="link" onClick={() => setOpen(true)}>
             {text}
           </Button>
-        )}
-        {item.editorial && (
-          <p className="text-xs text-gray-500 dark:text-gray-400 italic">
-            {item.editorial}
-          </p>
         )}
       </div>
       <Dialog open={open} onOpenChange={setOpen}>

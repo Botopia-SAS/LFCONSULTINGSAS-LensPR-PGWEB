@@ -4,9 +4,11 @@ import EventsGrid from "@/components/EventsGrid";
 export default async function EventsPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params;
+  const resolvedParams = await Promise.resolve(params).then((res) => res);
+  const locale = resolvedParams?.locale;
+  
   const t = await getTranslations("events");
   const events = await getEvents(locale);
   return (
@@ -15,13 +17,18 @@ export default async function EventsPage({
         <h1 className="text-4xl font-bold mb-8 text-center text-black dark:text-white">
           {t("title")}
         </h1>
-         {events.length === 0 ? (
-                  <p className="text-center text-gray-700 dark:text-gray-300">
-                    {t("noEvents")}
-                  </p>
-                ) : (
-                  <EventsGrid durationText={t("hours")} events={events} text={t("register")} longText={t("seeMore")} />
-                )}
+        {events.length === 0 ? (
+          <p className="text-center text-gray-700 dark:text-gray-300">
+            {t("noEvents")}
+          </p>
+        ) : (
+          <EventsGrid
+            durationText={t("hours")}
+            events={events}
+            text={t("register")}
+            longText={t("seeMore")}
+          />
+        )}
       </div>
     </section>
   );

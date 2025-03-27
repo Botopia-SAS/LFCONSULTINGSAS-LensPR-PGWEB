@@ -5,9 +5,10 @@ import ClientsGrid from "@/components/ClientsGrid";
 export default async function ClientsPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params;
+  const resolvedParams = await Promise.resolve(params).then((res) => res);
+  const locale = resolvedParams?.locale;
 
   const clients = await getClients(locale);
   const t = await getTranslations("clients");

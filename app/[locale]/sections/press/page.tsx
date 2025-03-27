@@ -1,12 +1,14 @@
 import { getTranslations } from "next-intl/server";
 import { getNewsByLocale } from "../../(helpers)/getNews";
 import NewsGrid from "@/components/NewsGrid";
+import { use } from "react";
 export default async function PressPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params;
+  const resolvedParams = await Promise.resolve(params).then((res) => res);
+  const locale = resolvedParams?.locale;
 
   const t = await getTranslations("press");
   const news = await getNewsByLocale(locale);
