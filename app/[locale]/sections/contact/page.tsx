@@ -22,14 +22,14 @@ export default function ContactSection() {
           {/* Columna 1: Formulario en una "tarjeta" */}
           <div className="md:w-1/2 bg-gray-50 dark:bg-zinc-800 py-4 px-4 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">{t("formTitle")}</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-700 dark:text-gray-300 mb-6 text-base leading-relaxed">
               {t("formDescription")}
             </p>
 
             <form action="https://formsubmit.co/laura@lenspr.com" method="POST" className="space-y-6">
               {/* Nombre */}
               <div>
-                <label htmlFor="name" className="block mb-1 font-medium ">
+                <label htmlFor="name" className="block mb-1 font-medium text-base text-base">
                   {t("nameLabel")}
                 </label>
                 <input
@@ -44,7 +44,7 @@ export default function ContactSection() {
 
               {/* Email */}
               <div>
-                <label htmlFor="email" className="block mb-1 font-medium">
+                <label htmlFor="email" className="block mb-1 font-medium text-base">
                   {t("emailLabel")}
                 </label>
                 <input
@@ -59,7 +59,7 @@ export default function ContactSection() {
 
               {/* Mensaje */}
               <div>
-                <label htmlFor="message" className="block mb-1 font-medium">
+                <label htmlFor="message" className="block mb-1 font-medium text-base">
                   {t("messageLabel")}
                 </label>
                 <textarea
@@ -75,7 +75,7 @@ export default function ContactSection() {
               {/* Botón de envío */}
               <button
                 type="submit"
-                className="bg-black dark:bg-white dark:text-black text-white font-semibold py-2 px-6 rounded hover:bg-orange-400 hover:text-black transition-colors"
+                className="bg-black text-base dark:bg-white dark:text-black text-white font-semibold py-2 px-6 rounded hover:bg-orange-400 hover:text-black transition-colors"
               >
                 {t("sendButton")}
               </button>
@@ -83,7 +83,7 @@ export default function ContactSection() {
           </div>
 
           {/* Columna 2: Info de contacto y mapa en otra tarjeta */}
-          <div className="md:w-1/2 bg-gray-50 dark:bg-zinc-800 px-4 py-4 rounded-lg shadow-lg">
+          <div className="md:w-1/2 bg-gray-50 dark:bg-zinc-800 px-4 py-4 rounded-lg shadow-lg text-base">
             <h3 className="text-2xl font-semibold mb-2">
               {t("contactInfoTitle")}
             </h3>
@@ -92,7 +92,7 @@ export default function ContactSection() {
             </p>
 
             {/* Información de contacto con íconos */}
-            <div className="space-y-4 text-gray-700 dark:text-gray-300 mb-8">
+            <div className="space-y-4 text-gray-700 dark:text-gray-300 mb-8 text-lg">
               <div className="flex items-center gap-3">
                 <MapPin className="w-6 h-6 text-orange-400" />
                 <p>
