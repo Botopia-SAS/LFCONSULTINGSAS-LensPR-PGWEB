@@ -40,16 +40,18 @@ export default function CredibilitySection() {
             <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-black dark:text-white">
               {t("title")}
             </h2>
-            <p className="mt-2 sm:mt-4 text-base sm:text-xl text-gray-700 dark:text-gray-300">
+            <p className="mb-2 sm:mb-4 text-base sm:text-xl text-gray-700 dark:text-gray-300">
               {t("text")}
             </p>
-            <Link
-              href={"https://calendly.com/lauraforerolenspr"}
-              target="_blank"
-              className="mt-4 sm:mt-6 px-4 sm:px-6 py-2 sm:py-3 bg-black text-white font-semibold rounded hover:bg-orange-400 hover:text-black transition transform hover:scale-105 hover:-translate-y-1 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-            >
-              {t("buttonLabel")}
-            </Link>
+            <div className="mt-2">
+              <Link
+                href={"https://calendly.com/lauraforerolenspr"}
+                target="_blank"
+                className="px-4 sm:px-6 py-2 sm:py-3 bg-black text-white font-semibold rounded hover:bg-orange-400 hover:text-black transition transform hover:scale-105 hover:-translate-y-1 dark:bg-white dark:text-black dark:hover:bg-gray-200 inline-block"
+              >
+                {t("buttonLabel")}
+              </Link>
+            </div>
           </div>
 
           {/* Carrusel */}
