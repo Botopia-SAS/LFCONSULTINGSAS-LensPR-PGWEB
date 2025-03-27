@@ -52,7 +52,7 @@ export default function Navbar() {
         </Link>
 
       {/* Menú principal (desktop) */}
-      <ul className="hidden md:flex space-x-14">
+      <ul className="hidden md:flex space-x-14 text-2xl">
         <li>
           <a
             href={`/${currentLanguage}/sections/aboutus`}

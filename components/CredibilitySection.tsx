@@ -47,7 +47,7 @@ export default function CredibilitySection() {
               <Link
                 href={"https://calendly.com/lauraforerolenspr"}
                 target="_blank"
-                className="px-4 sm:px-6 py-2 sm:py-3 bg-black text-white font-semibold rounded hover:bg-orange-400 hover:text-black transition transform hover:scale-105 hover:-translate-y-1 dark:bg-white dark:text-black dark:hover:bg-gray-200 inline-block"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-base bg-black text-white font-semibold rounded hover:bg-orange-400 hover:text-black transition transform hover:scale-105 hover:-translate-y-1 dark:bg-white dark:text-black dark:hover:bg-gray-200 inline-block"
               >
                 {t("buttonLabel")}
               </Link>

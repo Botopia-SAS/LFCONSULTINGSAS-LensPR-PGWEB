@@ -15,7 +15,7 @@ export default function Footer({ locale }: { locale: string }) {
           {/* Columna 1: Información de la Marca */}
           <div className="col-span-1">
             <h3 className="text-xl font-bold mb-4">{t("brand")}</h3>
-            <p className="text-sm">{t("brandDescription")}</p>
+            <p className="text-base">{t("brandDescription")}</p>
           </div>
           {/* Columna 2: Enlaces Rápidos */}
           <div className="col-span-1">
@@ -23,25 +23,25 @@ export default function Footer({ locale }: { locale: string }) {
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
               <Link
                 href={`/${locale}/sections/aboutus`}
-                className="hover:text-orange-400 transition-colors"
+                className="hover:text-orange-400 text-base transition-colors"
               >
                 {t("about")}
               </Link>
               <Link
                 href={`/${locale}/sections/services`}
-                className="hover:text-orange-400 transition-colors"
+                className="hover:text-orange-400 text-base transition-colors"
               >
                 {t("services")}
               </Link>
               <Link
                 href={`/${locale}/sections/contact`}
-                className="hover:text-orange-400 transition-colors"
+                className="hover:text-orange-400 text-base transition-colors"
               >
                 {t("contact")}
               </Link>
               <Link
                 href={`/${locale}/sections/press`}
-                className="hover:text-orange-400 transition-colors"
+                className="hover:text-orange-400 text-base transition-colors"
               >
                 {t("blog")}
               </Link>
@@ -50,9 +50,9 @@ export default function Footer({ locale }: { locale: string }) {
           {/* Columna 3: Contacto */}
           <div className="col-span-1">
             <h3 className="text-xl font-bold mb-4">{t("contact")}</h3>
-            <p className="text-sm">{t("address")}</p>
-            <p className="text-sm">{t("phone")}</p>
-            <a href={`mailto:${t("email")}`} className="text-sm">{t("email")}</a>
+            <p className="text-base">{t("address")}</p>
+            <p className="text-base">{t("phone")}</p>
+            <a href={`mailto:${t("email")}`} className="text-base">{t("email")}</a>
           </div>
           {/* Columna 4: Redes Sociales */}
           <div className="col-span-1">
@@ -62,7 +62,7 @@ export default function Footer({ locale }: { locale: string }) {
                 href="https://www.linkedin.com/company/lenspr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full border border-gray-400 dark:border-gray-600 hover:bg-orange-400 transition-colors"
+                className="p-2 text-base rounded-full border border-gray-400 dark:border-gray-600 hover:bg-orange-400 transition-colors"
               >
                 <FaLinkedinIn />
               </a>
@@ -70,7 +70,7 @@ export default function Footer({ locale }: { locale: string }) {
                 href="https://www.instagram.com/lensprlatam/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full border border-gray-400 dark:border-gray-600 hover:bg-orange-400 transition-colors"
+                className="p-2 text-base rounded-full border border-gray-400 dark:border-gray-600 hover:bg-orange-400 transition-colors"
               >
                 <FaInstagram />
               </a>
