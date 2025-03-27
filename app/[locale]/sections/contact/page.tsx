@@ -8,11 +8,6 @@ import { MapPin, PhoneCall, Mail } from "lucide-react";
 export default function ContactSection() {
   const t = useTranslations("contact");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
-
   return (
     <section className="bg-white dark:bg-zinc-900 text-black dark:text-white py-8 px-4">
       <div className="max-w-6xl mx-auto">

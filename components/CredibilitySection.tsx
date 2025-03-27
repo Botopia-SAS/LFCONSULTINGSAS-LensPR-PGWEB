@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function CredibilitySection() {
   const t = useTranslations("credibility");
@@ -10,7 +11,10 @@ export default function CredibilitySection() {
   const images = [
     { src: "/images/forbes-example.png", alt: "Ejemplo de publicación 1" },
     { src: "/images/tekios-example.png", alt: "Ejemplo de publicación 2" },
-    { src: "/images/el-colombiano-example.png", alt: "Ejemplo de publicación 3" },
+    {
+      src: "/images/el-colombiano-example.png",
+      alt: "Ejemplo de publicación 3",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,10 +31,6 @@ export default function CredibilitySection() {
     );
   };
 
-  const handleClickAdvisory = () => {
-    console.log("Book a free 30 min advisory");
-  };
-
   return (
     <section className="py-16 sm:py-28 bg-white dark:bg-zinc-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-8">
@@ -43,12 +43,13 @@ export default function CredibilitySection() {
             <p className="mt-2 sm:mt-4 text-base sm:text-xl text-gray-700 dark:text-gray-300">
               {t("text")}
             </p>
-            <button
-              onClick={handleClickAdvisory}
+            <Link
+              href={"https://calendly.com/lauraforerolenspr"}
+              target="_blank"
               className="mt-4 sm:mt-6 px-4 sm:px-6 py-2 sm:py-3 bg-black text-white font-semibold rounded hover:bg-orange-400 hover:text-black transition transform hover:scale-105 hover:-translate-y-1 dark:bg-white dark:text-black dark:hover:bg-gray-200"
             >
               {t("buttonLabel")}
-            </button>
+            </Link>
           </div>
 
           {/* Carrusel */}

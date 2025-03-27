@@ -33,7 +33,7 @@ export default function HomePage({
         onButtonClick={handleHeroButtonClick}
       />
       <Paragraph />
-      <Carousel title={c("title")} cta={c("cta")} locale={locale} />
+      <Carousel title={c("title")} cta={c("cta")} locale={locale} subtitle={c("subtitle")} />
       <CredibilitySection />
       <WorksSection />
       <TravelHospitalityCarousel />
