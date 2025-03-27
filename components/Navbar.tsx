@@ -114,7 +114,7 @@ export default function Navbar() {
           onMouseEnter={() => setIsLanguageOpen(true)}
           onMouseLeave={() => setIsLanguageOpen(false)}
         >
-          <button className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 border border-gray-300 dark:border-gray-700 py-2 px-4 rounded-lg flex">
+          <button className="text-gray-700 text-base dark:text-white hover:text-gray-900 dark:hover:text-gray-300 border border-gray-300 dark:border-gray-700 py-2 px-4 rounded-lg flex">
             {t("language")}
             <svg
               className="ml-2 w-3 h-7 fill-current"
@@ -125,7 +125,7 @@ export default function Navbar() {
             </svg>
           </button>
           {isLanguageOpen && (
-            <ul className="absolute -top-1 right-0 bg-white dark:bg-gray-900 border border-zinc-800 shadow-md min-w-[100px] rounded-lg">
+            <ul className="absolute cursor-pointer -top-1 text-base right-0 bg-white dark:bg-gray-900 border border-zinc-800 shadow-md min-w-[100px] rounded-lg">
               <li className="flex px-4 py-4">
                 {t("language")}
                 <svg
