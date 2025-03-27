@@ -29,14 +29,14 @@ export default function ContactSection() {
             <form action="https://formsubmit.co/laura@lenspr.com" method="POST" className="space-y-6">
               {/* Nombre */}
               <div>
-                <label htmlFor="name" className="block mb-1 font-medium text-base text-base">
+                <label htmlFor="name" className="block mb-1 font-medium text-base">
                   {t("nameLabel")}
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full border border-gray-300 dark:border-zinc-700 rounded py-2 px-4 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  className="w-full border border-gray-300 dark:border-zinc-700 rounded py-2 px-4 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base"
                   placeholder={t("namePlaceholder")}
                   required
                 />
@@ -51,7 +51,7 @@ export default function ContactSection() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full py-2 px-4 border border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  className="w-full py-2 px-4 border border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base"
                   placeholder={t("emailPlaceholder")}
                   required
                 />
@@ -66,7 +66,7 @@ export default function ContactSection() {
                   id="message"
                   rows={5}
                   name="message"
-                  className="w-full border py-2 px-4 border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  className="w-full border py-2 px-4 border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base"
                   placeholder={t("messagePlaceholder")}
                   required
                 ></textarea>
