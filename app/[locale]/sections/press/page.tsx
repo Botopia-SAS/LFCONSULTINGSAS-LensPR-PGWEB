@@ -20,7 +20,7 @@ export default async function PressPage({
           {t("title")}
         </h1>
         {news.length === 0 ? (
-          <p className="text-center text-gray-700 dark:text-gray-300">
+          <p className="text-center text-2xl text-gray-700 dark:text-gray-300">
             {t("noNews")}
           </p>
         ) : (

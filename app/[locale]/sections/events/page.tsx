@@ -18,7 +18,7 @@ export default async function EventsPage({
           {t("title")}
         </h1>
         {events.length === 0 ? (
-          <p className="text-center text-gray-700 dark:text-gray-300">
+          <p className="text-center text-2xl text-gray-700 dark:text-gray-300">
             {t("noEvents")}
           </p>
         ) : (
