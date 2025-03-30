@@ -34,43 +34,25 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-around py-2 bg-white dark:bg-zinc-900 text-lg relative z-50 dark:text-white">
+    <nav className="flex items-center justify-around py-8 bg-white dark:bg-zinc-900 text-lg relative z-50 dark:text-white">
 
-        <Link href={`/${currentLanguage}`}>
-          <img
-            src="/logo-black.svg"
-            alt="logo"
-            className="w-auto h-16 dark:hidden" // Modo claro: Logo normal
-          />
-        </Link>
-        <Link href={`/${currentLanguage}`}>
-          <img
-            src="/logo-white.svg"
-            alt="logo"
-            className="w-auto h-16 hidden dark:block" // Modo oscuro: Logo blanco
-          />
-        </Link>
+      <Link href={`/${currentLanguage}`}>
+        <img
+          src="/logo-black.svg"
+          alt="logo"
+          className="w-auto h-16 dark:hidden" // Modo claro: Logo normal
+        />
+      </Link>
+      <Link href={`/${currentLanguage}`}>
+        <img
+          src="/logo-white.svg"
+          alt="logo"
+          className="w-auto h-16 hidden dark:block" // Modo oscuro: Logo blanco
+        />
+      </Link>
 
       {/* Menú principal (desktop) */}
       <ul className="hidden md:flex space-x-14 text-2xl">
-        <li>
-          <a
-            href={`/${currentLanguage}/sections/aboutus`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-          >
-            {t("aboutUs")}
-          </a>
-        </li>
-
-
-        <li>
-          <a
-            href={`/${currentLanguage}/sections/services`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-          >
-            {t("services")}
-          </a>
-        </li>
 
         {/* CLIENTS (sin dropdown) */}
         <li>
@@ -101,6 +83,14 @@ export default function Navbar() {
             {t("press")}
           </a>
         </li>
+        <li>
+          <a
+            href={`/${currentLanguage}/sections/aboutus`}
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            {t("aboutUs")}
+          </a>
+        </li>
 
         <li>
 
@@ -108,16 +98,16 @@ export default function Navbar() {
       </ul>
 
       {/* Botones de Language y Contact (desktop) */}
-      <div className="hidden md:flex items-center space-x-4">
+      <div className="hidden md:flex items-center space-x-16">
         <div
           className="relative"
           onMouseEnter={() => setIsLanguageOpen(true)}
           onMouseLeave={() => setIsLanguageOpen(false)}
         >
-          <button className="text-gray-700 text-base dark:text-white hover:text-gray-900 dark:hover:text-gray-300 border border-gray-300 dark:border-gray-700 py-2 px-4 rounded-lg flex">
+          <button className="text-gray-700 text-base dark:text-white hover:text-gray-900 dark:hover:text-gray-300 shadow-lg shadow-gray-300 dark:border-gray-700 py-2 px-4 rounded-lg flex">
             {t("language")}
             <svg
-              className="ml-2 w-3 h-7 fill-current"
+              className="ml-2 w-3 h-5 fill-current"
               viewBox="0 0 10 6"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -125,7 +115,7 @@ export default function Navbar() {
             </svg>
           </button>
           {isLanguageOpen && (
-            <ul className="absolute cursor-pointer -top-1 text-base right-0 bg-white dark:bg-gray-900 border border-zinc-800 shadow-md min-w-[100px] rounded-lg">
+            <ul className="absolute cursor-pointer -top-1 text-base right-0 bg-white dark:bg-gray-900  shadow-md min-w-[100px] rounded-lg">
               <li className="flex px-4 py-4">
                 {t("language")}
                 <svg
@@ -169,7 +159,7 @@ export default function Navbar() {
 
         <button
           onClick={() => router.push(`/${currentLanguage}/sections/contact`)}
-          className="text-gray-700 border border-gray-700 bg-orange-400 dark:bg-orange-400 dark:text-gray-700 hover:bg-black hover:text-white px-4 py-2 rounded transition hover:scale-110 hover:-translate-y-1"
+          className="text-white text-md shadow-lg  bg-black dark:bg-orange-300 dark:text-gray-700 hover:bg-black hover:text-white px-8 py-4 rounded-full transition hover:scale-110 hover:-translate-y-1"
         >
           {t("contact")}
         </button>
@@ -186,7 +176,7 @@ export default function Navbar() {
 
       {/* Menú Móvil */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-white dark:bg-zinc-900 border-t border-gray-200 dark:border-zinc-700 p-6">
+        <div className="md:hidden absolute text-3xl top-20 left-0 w-full bg-white dark:bg-zinc-900 border-t border-gray-200 dark:border-zinc-700 p-12">
           <ul className="flex flex-col space-y-4">
             {/* Home */}
             <li>
@@ -196,17 +186,6 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("home")}
-              </a>
-            </li>
-
-            {/* Agency */}
-            <li>
-              <a
-                href={`/${currentLanguage}/sections/aboutus`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("aboutUs")}
               </a>
             </li>
 
@@ -221,8 +200,8 @@ export default function Navbar() {
               </a>
             </li>
 
-             {/* Clients */}
-             <li>
+            {/* Clients */}
+            <li>
               <a
                 href={`/${currentLanguage}/sections/clients`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
@@ -232,8 +211,8 @@ export default function Navbar() {
               </a>
             </li>
 
-             {/* Events */}
-             <li>
+            {/* Events */}
+            <li>
               <a
                 href={`/${currentLanguage}/sections/events`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
@@ -251,6 +230,17 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("press")}
+              </a>
+            </li>
+
+            {/* Agency */}
+            <li>
+              <a
+                href={`/${currentLanguage}/sections/aboutus`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("aboutUs")}
               </a>
             </li>
 

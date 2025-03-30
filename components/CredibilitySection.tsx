@@ -1,87 +1,66 @@
 "use client";
 
-import React, { useState } from "react";
-import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 
-export default function CredibilitySection() {
-  const t = useTranslations("credibility");
+const Counter = ({ value }: { value: string }) => {
+  const [count, setCount] = useState(0);
 
-  const images = [
-    { src: "/images/forbes-example.png", alt: "Ejemplo de publicación 1" },
-    { src: "/images/tekios-example.png", alt: "Ejemplo de publicación 2" },
-    {
-      src: "/images/el-colombiano-example.png",
-      alt: "Ejemplo de publicación 3",
-    },
+  useEffect(() => {
+    let start = 0;
+    const end = parseInt(value.replace(/\D/g, ""));
+    if (isNaN(end)) return;
+
+    const duration = 1500;
+    const stepTime = Math.abs(Math.floor(duration / end));
+    const timer = setInterval(() => {
+      start += 1;
+      setCount(start);
+      if (start >= end) clearInterval(timer);
+    }, stepTime);
+
+    return () => clearInterval(timer);
+  }, [value]);
+
+  return <span>{count}{value.includes("+") ? "+" : ""}</span>;
+};
+
+const CredibilityStats = () => {
+  const t = useTranslations("credibilityStats");
+  
+  const stats = [
+    { number: "50+", label: t("brands"), description: t("brandsDescription") },
+    { number: "12", label: t("countries"), description: t("countriesDescription") },
+    { number: "400", label: t("events"), description: t("eventsDescription") },
+    { number: "700", label: t("publications"), description: t("publicationsDescription") },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   return (
-    <section className="py-16 sm:py-28 bg-white dark:bg-zinc-900 transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-4 sm:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-          {/* Texto y botón */}
-          <div className="w-full md:w-2/5 text-left space-y-8 md:space-y-14">
-            <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-black dark:text-white">
-              {t("title")}
-            </h2>
-            <p className="mb-2 sm:mb-4 text-base sm:text-xl text-gray-700 dark:text-gray-300">
-              {t("text")}
-            </p>
-            <div className="mt-2">
-              <Link
-                href={"https://calendly.com/lauraforerolenspr"}
-                target="_blank"
-                className="px-4 sm:px-6 py-2 sm:py-3 text-base bg-black text-white font-semibold rounded hover:bg-orange-400 hover:text-black transition transform hover:scale-105 hover:-translate-y-1 dark:bg-white dark:text-black dark:hover:bg-gray-200 inline-block"
-              >
-                {t("buttonLabel")}
-              </Link>
-            </div>
-          </div>
-
-          {/* Carrusel */}
-          <div className="w-full md:w-1/2 flex flex-col items-center">
-            <div className="relative w-full max-w-xl h-56 sm:h-64 md:h-[350px]">
-              <Image
-                src={images[currentIndex].src}
-                alt={images[currentIndex].alt}
-                fill
-                objectFit="cover"
-                className="rounded-lg shadow-lg transition transform hover:scale-105 hover:translate-y-[-4px] dark:shadow-gray-800"
-              />
-              {/* Flecha Izquierda */}
-              <button
-                onClick={handlePrev}
-                className="absolute left-2 top-1/2 -translate-y-1/2 bg-black dark:bg-white dark:text-black text-white p-2 rounded-full hover:bg-orange-400 hover:text-black transition"
-              >
-                &lt;
-              </button>
-              {/* Flecha Derecha */}
-              <button
-                onClick={handleNext}
-                className="absolute right-2 top-1/2 -translate-y-1/2 bg-black dark:bg-white dark:text-black text-white p-2 rounded-full hover:bg-orange-400 hover:text-black transition"
-              >
-                &gt;
-              </button>
-            </div>
-          </div>
+    <section className="py-12 bg-white text-black text-center px-4 md:px-6">
+      <div className="max-w-full mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-10">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              className="flex flex-col"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex flex-col dark:bg-zinc-900 text-left py-4">
+                <span className="text-7xl font-semibold"><Counter value={stat.number} /></span>
+                <hr className="bg-gray-500 w-full" />
+                <h3 className="text-xl font-semibold mt-4">{stat.label}</h3>
+                <p className="text-gray-500 text-sm mr-6">{stat.description}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default CredibilityStats;

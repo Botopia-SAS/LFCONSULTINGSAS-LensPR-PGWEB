@@ -50,7 +50,7 @@ export default function Footer({ locale }: { locale: string }) {
           {/* Columna 3: Contacto */}
           <div className="col-span-1">
             <h3 className="text-xl font-bold mb-4">{t("contact")}</h3>
-            <p className="text-base">{t("address")}</p>
+
             <p className="text-base">{t("phone")}</p>
             <a href={`mailto:${t("email")}`} className="text-base">{t("email")}</a>
           </div>

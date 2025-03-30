@@ -34,7 +34,7 @@ const Hero: React.FC<HeroProps> = ({
 
       {/* Contenido principal */}
       <div className="relative z-10 text-center text-white max-w-full px-4 py-16 md:py-24">
-        <h1 className="text-4xl md:text-6xl lg:text-8xl font-semibold mb-4 md:mb-6">
+        <h1 className="text-3xl md:text-4xl lg:text-7xl font-semibold mb-4 md:mb-6">
           {title}
         </h1>
         <p className="text-lg md:text-2xl text-gray-200 mb-6">

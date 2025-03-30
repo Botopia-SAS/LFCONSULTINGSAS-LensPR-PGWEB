@@ -6,7 +6,7 @@ import CredibilitySection from "@/components/CredibilitySection";
 import WorksSection from "@/components/WorksSection";
 import Paragraph from "@/components/paragraph";
 import TravelHospitalityCarousel from "@/components/TravelHospitalityCarousel";
-import Carousel from "@/components/CarouselSection";
+import ClientSection from "@/components/ClientSection";
 
 export default function HomePage({
   params,
@@ -33,10 +33,10 @@ export default function HomePage({
         onButtonClick={handleHeroButtonClick}
       />
       <Paragraph />
-      <Carousel title={c("title")} cta={c("cta")} locale={locale} subtitle={c("subtitle")} />
       <CredibilitySection />
-      <WorksSection />
       <TravelHospitalityCarousel />
+      <ClientSection />
+      
     </main>
   );
 }

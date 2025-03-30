@@ -5,13 +5,13 @@
     "clients": "Clients",
     "results": "Results",
     "awards": "Awards",
-    "language": "Language",
-    "aboutUs": "About us",
+    "language": "EN",
+    "aboutUs": "Tailor-made",
     "services": "Services",
     "press": "Press",
     "events": "Events",
     "gallery": "Gallery",
-    "contact": "Contact",
+    "contact": "Let's talk",
     "spanish": "Spanish",
     "english": "English",
     "portuguese": "Portuguese"
@@ -46,18 +46,25 @@
   },
   "hero": {
     "title": "Press & Events",
-    "subtitle": "In the startup, tech, and finance sector",
+    "subtitle": "Startups | Big Tech | Venture Capital | Finance",
     "videoUrl": "/videos/video-hero.mp4"
   },
   "paragraph": {
-    "text": "LENS PR: public relations for tech, finance, and VC in 12+ countries (LATAM, US, Spain). Connecting founders, startups, and VCs through press, communication, events, and alliances.",
-    "letsConnect": "Schedule today",
+    "text": "We are a public relations firm passionate about the Latino and global tech ecosystem. We connect startups, companies and global financiers with their audiences through events, experiences and press in more than 12 countries in Latin America, United States and Europe.",
+    "letsConnect": "Schedule meeting",
     "moreAboutUs": "MORE ABOUT US"
   },
-  "credibility": {
-    "title": "BUILD TRUST AND CREDIBILITY",
-    "text": "We offer tailor-made services such as creative content, your own press coverage ecosystem, and recommendations to get your story out.",
-    "buttonLabel": "Book a free 30 min advisory"
+  "credibilityStats": {
+    "title": "With a global perspective",
+    "subtitle": "International brands around the world trust us to deliver results.",
+    "brands": "Brands",
+    "brandsDescription": "Over the past 3 years, we have collaborated with over 50 local and global brands.",
+    "countries": "Countries",
+    "countriesDescription": "Working across many markets has built our international expertise.",
+    "events": "Events",
+    "eventsDescription": "Our experiences leveled up brands and their key audiences across LATAM.",
+    "publications": "Publications",
+    "publicationsDescription": "We tell stories. Our clients have the content, we publish it."
   },
   "travelHospitality": {
     "headerTitle": "Achivements & Industries",
@@ -147,6 +154,10 @@
     "noClients": "No clients available",
     "seeMore": "See more"
   },
+  "clientSection": {
+    "title": "They trust us",
+    "contactButton": "Join today"
+},
   "events": {
     "title": "Events",
     "noEvents": "No events available",

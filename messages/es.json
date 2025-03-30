@@ -5,8 +5,8 @@
     "clients": "Clientes",
     "results": "Resultados",
     "awards": "Premios",
-    "language": "Idioma",
-    "aboutUs": "Nosotros",
+    "language": "ES",
+    "aboutUs": "Personalizado",
     "services": "Servicios",
     "press": "Prensa",
     "events": "Eventos",
@@ -46,18 +46,25 @@
   },
   "hero": {
     "title": "Prensa y Eventos",
-    "subtitle": "En el sector de startups, tecnología y finanzas",
+    "subtitle": "Startups | Big Tech | Capital de Riesgo | Finanzas",
     "videoUrl": "/videos/video-hero.mp4"
   },
   "paragraph": {
-    "text": "LENS PR: relaciones públicas especializadas en tecnología, finanzas y capital de riesgo en +12 países de LATAM, US y España. Conectamos startups y fondos de VC con sus audiencias mediante estrategias de prensa, comunicación, eventos y alianzas.",
-    "letsConnect": "Agenda hoy",
+    "text": "Somos una firma de relaciones públicas apasionada por el ecosistema tech latinoamericano y global. Nos especializamos en conectar startups, empresas y financieras globales con sus audiencias a través de eventos, experiencias y prensa en más de 12 países de Latam, estados unidos y europa.",
+    "letsConnect": "Agenda una reunión",
     "moreAboutUs": "SOBRE NOSOTROS"
   },
-  "credibility": {
-    "title": "CONSTRUYE CONFIANZA Y CREDIBILIDAD",
-    "text": "Ofrecemos servicios a medida, como contenido creativo, tu propio ecosistema de cobertura de prensa y recomendaciones para dar a conocer tu historia.",
-    "buttonLabel": "Reserva una asesoría gratuita de 30 minutos"
+  "credibilityStats": {
+    "title": "Con una perspectiva global",
+    "subtitle": "Marcas internacionales confían en nosotros para entregar resultados.",
+    "brands": "Marcas",
+    "brandsDescription": "En los últimos 3 años, hemos colaborado con más de 50 marcas locales y globales.",
+    "countries": "Países",
+    "countriesDescription": "Trabajar en múltiples mercados ha fortalecido nuestra experiencia internacional.",
+    "events": "Eventos",
+    "eventsDescription": "Nuestras experiencias han elevado a las marcas y sus audiencias clave en toda LATAM.",
+    "publications": "Publicaciones",
+    "publicationsDescription": "Contamos historias. Nuestros clientes tienen el contenido, nosotros lo publicamos."
   },
   "travelHospitality": {
     "headerTitle": "Logros e Industrias",
@@ -147,6 +154,10 @@
     "noClients": "No hay clientes disponibles",
     "seeMore": "Ver más"
   },
+  "clientSection": {
+    "title": "Ellos confían en nosotros",
+    "contactButton": "Únete hoy"
+},
   "events": {
     "title": "Eventos",
     "noEvents": "No hay eventos disponibles",

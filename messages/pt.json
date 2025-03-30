@@ -5,7 +5,7 @@
     "clients": "Clientes",
     "results": "Resultados",
     "awards": "Prêmios",
-    "language": "Idioma",
+    "language": "PT",
     "aboutUs": "Sobre nós",
     "services": "Serviços",
     "press": "Imprensa",
@@ -45,19 +45,26 @@
     }
   },
   "hero": {
-    "title": "Imprensa e Eventos",
-    "subtitle": "No setor de startups, tecnologia e finanças",
+    "title": "Imprensa & Eventos",
+    "subtitle": "Startups, Big Tech, Capital de Risco e Finanças",
     "videoUrl": "/videos/video-hero.mp4"
   },
   "paragraph": {
-    "text": "A LENS PR conecta empresas de tecnologia e fundos de investimento com o público, oferecendo estratégias de relações públicas personalizadas em diversos países.",
+    "text": "Somos uma boutique de relações públicas especializada em conectar startups, empresas e instituições financeiras globalmente com seus públicos por meio de eventos e imprensa em mais de 12 países da América Latina, Estados Unidos e Europa.",
     "letsConnect": "Agende hoje mesmo",
     "moreAboutUs": "MAIS SOBRE NÓS"
   },
-  "credibility": {
-    "title": "CONSTRUA CONFIANÇA E CREDIBILIDADE",
-    "text": "Oferecemos serviços personalizados, como conteúdo criativo, seu próprio ecossistema de cobertura de imprensa e recomendações para divulgar sua história.",
-    "buttonLabel": "Agende uma consultoria gratuita de 30 minutos"
+  "credibilityStats": {
+    "title": "Com uma perspectiva global",
+    "subtitle": "Marcas internacionais confiam em nós para entregar resultados.",
+    "brands": "Marcas",
+    "brandsDescription": "Nos últimos 3 anos, colaboramos com mais de 50 marcas locais e globais.",
+    "countries": "Países",
+    "countriesDescription": "Trabalhar em vários mercados fortaleceu nossa experiência internacional.",
+    "events": "Eventos",
+    "eventsDescription": "Nossas experiências elevaram marcas e seus públicos-chave em toda a América Latina.",
+    "publications": "Publicações",
+    "publicationsDescription": "Contamos histórias. Nossos clientes têm o conteúdo, nós o publicamos."
   },
   "travelHospitality": {
     "headerTitle": "Conquistas & Indústrias",
@@ -146,6 +153,10 @@
     "title": "Clientes",
     "noClients": "Nenhum cliente disponível",
     "seeMore": "Ver mais"
+  },
+  "clientSection": {
+    "title": "Eles confiam em nós",
+    "contactButton": "Join today"
   },
   "events": {
     "eventsCreated": "Eventos Criados",
