@@ -169,5 +169,27 @@
     "title": "Eles confiaram em nós",
     "cta": "Quero fazer parte da LENS PR",
     "subtitle": "E muitos mais"
+  },
+  "loudSection": {
+    "title": "Nossa Experiência Loud",
+    "subtitle": "Criando experiências imersivas para marcas e públicos.",
+    "corporateEvents": {
+      "title": "Eventos Corporativos",
+      "description": "Projetamos experiências inovadoras que conectam marcas ao seu público por meio de eventos impactantes."
+    },
+    "tailorMadeProjects": {
+      "title": "Projetos Sob Medida",
+      "description": "Da idealização à execução, criamos soluções personalizadas para necessidades únicas."
+    },
+    "pressPublications": {
+      "category": "Imprensa e Mídia",
+      "title": "Publicações e Artigos",
+      "description": "Nosso trabalho foi destaque nos principais veículos de comunicação do mundo."
+    },
+    "creativeDesign": {
+      "title": "Design Criativo",
+      "highlight": "Ousado e Inovador",
+      "description": "Nossa equipe de design dá vida às ideias com uma estética única e poderosa."
+    }
   }
 }
