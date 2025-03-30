@@ -63,7 +63,7 @@ export default function ClientSection() {
                                 height={90}
                                 className="object-contain"
                             />
-                        </motion.div>
+                        </motion.div>  
                     ))}
                 </motion.div>
 
