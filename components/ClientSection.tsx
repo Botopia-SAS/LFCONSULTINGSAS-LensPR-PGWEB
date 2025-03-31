@@ -112,6 +112,30 @@ export default function ClientSection() {
                         {t("contactButton")}
                     </motion.button>
                 </div>
+
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="grid md:hidden grid-cols-4 grid-rows-4 gap-4 p-4 justify-items-center items-center"
+                >
+                    {[...Array(16)].map((_, index) => (
+                        <motion.div
+                            key={index}
+                            whileHover={{ scale: 1.2 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <Image
+                                src={`/images/clientes/secundarios_d/clientedark${index + 1}.png`}
+                                alt={`Client ${index + 1}`}
+                                width={59}
+                                height={59}
+                                className="object-contain"
+                            />
+                        </motion.div>
+                    ))}
+                </motion.div>
+
                 <div className="hidden md:flex border border-gray-300 dark:border-gray-700"></div>
 
             </div>
