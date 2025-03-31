@@ -13,7 +13,7 @@ export default function LoudSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-full">
 
-        <div className="bg-yellow-400 py-20 md:py-0 flex flex-col justify-center items-center text-center relative overflow-hidden">
+        <div className="bg-yellow-400 py-28 md:py-0 flex flex-col justify-center items-center text-center relative overflow-hidden">
           {/* Imagen de fondo */}
           <img
             src="/hand.png"
