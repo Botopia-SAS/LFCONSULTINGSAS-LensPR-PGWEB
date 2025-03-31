@@ -24,9 +24,9 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="hidden md:grid grid-cols-3 grid-rows-3 gap-4 p-4 justify-items-center items-center"
+                    className="hidden md:grid grid-cols-4 grid-rows-4 gap-4 p-4 justify-items-center items-center"
                 >
-                    {[...Array(12)].map((_, index) => (
+                    {[...Array(16)].map((_, index) => (
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.2 }}
@@ -72,9 +72,9 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className=" grid grid-cols-3 grid-rows-3 gap-4 p-4 justify-items-center items-center"
+                    className=" grid grid-cols-4 grid-rows-4 gap-4 p-4 justify-items-center items-center"
                 >
-                    {[...Array(12)].map((_, index) => (
+                    {[...Array(16)].map((_, index) => (
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.2 }}
@@ -103,8 +103,6 @@ export default function ClientSection() {
                         {t("title")}
                     </motion.h2>
 
-                    {/* Botón con animación de escala al hacer hover */}
-                    {/* Botón actualizado con router.push */}
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
