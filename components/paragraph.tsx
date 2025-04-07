@@ -10,21 +10,14 @@ export default function Paragraph() {
   const t = useTranslations("paragraph");
 
   return (
-    <section className="flex flex-col items-center justify-center text-center px-4 sm:px-8 py-12 sm:py-16 bg-white dark:bg-zinc-900 transition-colors duration-300">
+    <section className="flex flex-col items-center justify-center text-center px-4 sm:px-8 py-8 md:py-16 bg-white dark:bg-zinc-900 transition-colors duration-300">
       <div className="max-w-full">
-        <p
-          style={{
-            textAlign: "justify",
-            fontFamily: "'Georgia', serif",
-            fontWeight: "lighter", 
-          }}
-          className="text-lg md:text-4xl md:py-8 md:tracking-wider font-light"
-        >
+        <p className="text-lg md:text-3xl md:py-8 md:tracking-wider font-extralight text-justify">
           {t("text")}
         </p>
 
 
-        <div className="flex py-12 md:py-8 flex-col sm:flex-row md:justify-center justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full">
+        <div className="flex pt-12 md:py-8 flex-col sm:flex-row md:justify-center justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full">
           <Link
             href="https://calendly.com/lauraforerolenspr"
             target="_blank"
