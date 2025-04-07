@@ -30,6 +30,7 @@ export default function ClientSection() {
                             whileHover={{ scale: 1.2 }}
                             transition={{ duration: 0.3 }}
                         >
+                            <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center">
                             <Image
                                 src={`/images/clientes/secundarios_d/clientedark${index + 1}.png`}
                                 alt={`Client ${index + 1}`}
@@ -37,6 +38,7 @@ export default function ClientSection() {
                                 height={59}
                                 className="object-contain"
                             />
+                            </div>
                         </motion.div>
                     ))}
                 </motion.div>
@@ -54,7 +56,7 @@ export default function ClientSection() {
                             whileHover={{ scale: 1.2 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <div className="w-24 h-22 flex items-center justify-center">
+                            <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center">
                                 <Image
                                     src={`/images/clientes/principales/clientelight${index + 1}.png`}
                                     alt={`Client ${index + 1}`}
@@ -71,7 +73,7 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className=" grid grid-cols-4 grid-rows-4 gap-4 px-4 justify-items-center items-center"
+                    className=" grid grid-cols-4 grid-rows-4 gap-4 p-4 justify-items-center items-center"
                 >
                     {[...Array(16)].map((_, index) => (
                         <motion.div
@@ -79,13 +81,15 @@ export default function ClientSection() {
                             whileHover={{ scale: 1.2 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <Image
-                                src={`/images/clientes/secundarios_i/clientedark${index + 1}.png`}
-                                alt={`Client ${index + 1}`}
-                                width={59}
-                                height={59}
-                                className="object-contain"
-                            />
+                            <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center">
+                                <Image
+                                    src={`/images/clientes/secundarios_i/clientedark${index + 1}.png`}
+                                    alt={`Client ${index + 1}`}
+                                    width={59}
+                                    height={59}
+                                    className="object-contain"
+                                />
+                            </div>
                         </motion.div>
                     ))}
                 </motion.div>
@@ -123,13 +127,15 @@ export default function ClientSection() {
                             whileHover={{ scale: 1.2 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <Image
-                                src={`/images/clientes/secundarios_d/clientedark${index + 1}.png`}
-                                alt={`Client ${index + 1}`}
-                                width={59}
-                                height={59}
-                                className="object-contain"
-                            />
+                            <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center">
+                                <Image
+                                    src={`/images/clientes/secundarios_d/clientedark${index + 1}.png`}
+                                    alt={`Client ${index + 1}`}
+                                    width={59}
+                                    height={59}
+                                    className="object-contain"
+                                />
+                            </div>
                         </motion.div>
                     ))}
                 </motion.div>
