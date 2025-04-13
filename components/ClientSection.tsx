@@ -30,12 +30,12 @@ export default function ClientSection() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="hidden md:flex text-xl md:text-4xl font-semibold text-gray-900 dark:text-white py-8"
+                className="flex text-4xl md:text-5xl font-semibold text-gray-900 dark:text-white py-8"
             >
                 {t("title")}
             </motion.h2>
             {/* Grid Lines */}
-            <div className="inset-0 grid grid-cols-1 md:grid-cols-3 grid-rows-1 mt-1">
+            <div className="inset-0 grid grid-cols-1 md:grid-cols-3 grid-rows-1 mt-1 w-full">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -66,7 +66,7 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="bg-black shadow-md shadow-black grid grid-cols-4 grid-rows-4 gap-4 justify-items-center items-center"
+                    className="bg-black mx-6 shadow-md shadow-black grid grid-cols-4 grid-rows-4 gap-4 justify-items-center items-center"
                 >
                     {[...Array(16)].map((_, index) => (
                         <motion.div
@@ -91,7 +91,7 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className=" grid grid-cols-5 grid-rows-4 gap-4 justify-items-center items-center"
+                    className=" grid mx-6 grid-cols-5 grid-rows-4 gap-4 justify-items-center items-center"
                 >
                     {[...Array(20)].map((_, index) => (
                         <motion.div
@@ -116,7 +116,7 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="md:hidden grid grid-cols-4 grid-rows-4 gap-4 justify-items-center items-center"
+                    className="md:hidden mx-4 grid grid-cols-4 grid-rows-4 gap-4 justify-items-center items-center"
                 >
                     {[...Array(16)].map((_, index) => (
                         <motion.div
