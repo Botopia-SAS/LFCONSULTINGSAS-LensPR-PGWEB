@@ -50,9 +50,9 @@
     "videoUrl": "/videos/video-hero.mp4"
   },
   "paragraph": {
-    "text": "Somos una firma de relaciones públicas apasionada por el ecosistema tech latinoamericano y global. Nos especializamos en conectar startups, empresas y financieras globales con sus audiencias a través de eventos, experiencias y prensa en más de 12 países de Latam, estados unidos y europa.",
-    "letsConnect": "Agenda una reunión",
-    "moreAboutUs": "SOBRE NOSOTROS"
+    "text": "Lens PR es una firma colombiana de Relaciones Públicas y Eventos comprometida con brindar el mejor servicio y calidad a nuestros clientes. Conectamos startups, empresas e inversionistas globales con sus audiencias a través de eventos, experiencias y prensa en más de 10 países y 12 industrias tecnológicas en América Latina, Estados Unidos y Europa.",
+    "letsConnect": "Agendar reunión",
+    "moreAboutUs": "MÁS SOBRE NOSOTROS"
   },
   "credibilityStats": {
     "title": "Con una perspectiva global",
@@ -157,7 +157,7 @@
   "clientSection": {
     "title": "Ellos confían en nosotros",
     "contactButton": "Únete hoy"
-},
+  },
   "events": {
     "title": "Eventos",
     "noEvents": "No hay eventos disponibles",
@@ -174,8 +174,8 @@
     "title": "Nuestra Experiencia LensPR",
     "subtitle": "Creando experiencias inmersivas para marcas y audiencias.",
     "corporateEvents": {
-      "title": "Eventos Corporativos",
-      "description": "Diseñamos experiencias innovadoras que conectan marcas con su audiencia a través de eventos impactantes."
+      "title": "Eventos y Experiencias",
+      "description": "Diseñamos experiencias innovadoras que conectan a las marcas con sus audiencias a través de eventos impactantes."
     },
     "tailorMadeProjects": {
       "title": "Proyectos a Medida",

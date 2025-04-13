@@ -50,7 +50,7 @@
     "videoUrl": "/videos/video-hero.mp4"
   },
   "paragraph": {
-    "text": "We are a public relations firm passionate about the Latino and global tech ecosystem. We connect startups, companies and global financiers with their audiences through events, experiences and press in more than 12 countries in Latin America, United States and Europe.",
+    "text": "Lens PR is a Colombian Public Relations & Events firm committed to deliver the best service and quality for our clients. We connect startups, companies and global financiers with their audiences through events, experiences and press in more than 10 countries and 12 tech industries. in Latin America, United States and Europe.",
     "letsConnect": "Schedule meeting",
     "moreAboutUs": "MORE ABOUT US"
   },
@@ -173,7 +173,7 @@
     "title": "Our LensPR Experience",
     "subtitle": "Creating immersive experiences for brands and audiences.",
     "corporateEvents": {
-      "title": "Corporate Events",
+      "title": "Events & Experiences",
       "description": "We design innovative experiences that connect brands with their audiences through impactful events."
     },
     "tailorMadeProjects": {
@@ -181,8 +181,8 @@
       "description": "From ideation to execution, we create personalized solutions for unique needs."
     },
     "pressPublications": {
-      "category": "Press & Media",
-      "title": "Publications & Articles",
+      "category": "Free press & Media",
+      "title": "Free Press & Media",
       "description": "Our work has been featured in top media outlets worldwide."
     },
     "creativeDesign": {

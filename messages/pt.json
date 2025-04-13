@@ -50,8 +50,8 @@
     "videoUrl": "/videos/video-hero.mp4"
   },
   "paragraph": {
-    "text": "Somos uma boutique de relações públicas especializada em conectar startups, empresas e instituições financeiras globalmente com seus públicos por meio de eventos e imprensa em mais de 12 países da América Latina, Estados Unidos e Europa.",
-    "letsConnect": "Agende hoje mesmo",
+    "text": "A Lens PR é uma empresa colombiana de Relações Públicas e Eventos comprometida em oferecer o melhor serviço e qualidade para nossos clientes. Conectamos startups, empresas e investidores globais com seus públicos por meio de eventos, experiências e imprensa em mais de 10 países e 12 setores de tecnologia na América Latina, Estados Unidos e Europa.",
+    "letsConnect": "Agendar reunião",
     "moreAboutUs": "MAIS SOBRE NÓS"
   },
   "credibilityStats": {
@@ -174,17 +174,17 @@
     "title": "Nossa Experiência LensPR",
     "subtitle": "Criando experiências imersivas para marcas e públicos.",
     "corporateEvents": {
-      "title": "Eventos Corporativos",
-      "description": "Projetamos experiências inovadoras que conectam marcas ao seu público por meio de eventos impactantes."
+      "title": "Eventos e Experiências",
+      "description": "Criamos experiências inovadoras que conectam marcas ao seu público por meio de eventos impactantes."
     },
     "tailorMadeProjects": {
       "title": "Projetos Sob Medida",
       "description": "Da idealização à execução, criamos soluções personalizadas para necessidades únicas."
     },
     "pressPublications": {
-      "category": "Imprensa e Mídia",
-      "title": "Publicações e Artigos",
-      "description": "Nosso trabalho foi destaque nos principais veículos de comunicação do mundo."
+      "category": "Imprensa & Mídia",
+      "title": "Imprensa & Mídia",
+      "description": "Nosso trabalho foi destaque em importantes veículos de mídia ao redor do mundo."
     },
     "creativeDesign": {
       "title": "Design Criativo",

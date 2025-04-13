@@ -37,9 +37,9 @@ const CredibilityStats = () => {
   ];
 
   return (
-    <section className="md:py-10 bg-white text-black text-center px-4 md:px-6">
+    <section className="bg-white text-black text-center px-4 md:px-6">
       <div className="max-w-full mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:py-6">
           {stats.map((stat, index) => (
             <motion.div
               key={index}

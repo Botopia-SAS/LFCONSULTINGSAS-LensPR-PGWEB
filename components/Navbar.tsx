@@ -34,7 +34,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-around py-8 bg-white dark:bg-zinc-900 text-lg relative z-50 dark:text-white">
+    <nav className="flex items-center justify-around py-6 md:py-8 bg-white dark:bg-zinc-900 text-lg relative z-50 dark:text-white">
 
       <Link href={`/${currentLanguage}`}>
         <img

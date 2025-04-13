@@ -13,6 +13,14 @@ export default function LoudSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 w-full max-w-full">
 
+        <div className="bg-black rounded-lg text-white p-6 flex flex-col justify-center items-center text-center h-full">
+
+          <h3 className="font-bold text-xl mt-2">{t("pressPublications.title")}</h3>
+          <p className="text-gray-400 text-sm mt-2">
+            {t("pressPublications.description")}
+          </p>
+        </div>
+
         <div className="bg-orange-400 rounded-lg py-8 md:py-0 flex flex-col justify-center items-center text-center relative overflow-hidden">
 
           {/* Texto centrado verticalmente */}
@@ -27,14 +35,6 @@ export default function LoudSection() {
           <h3 className="font-bold text-xl">{t("tailorMadeProjects.title")}</h3>
           <p className="text-gray-700 text-sm mt-2">
             {t("tailorMadeProjects.description")}
-          </p>
-        </div>
-
-        <div className="bg-black rounded-lg text-white p-6 flex flex-col justify-center items-center text-center h-full">
-          
-          <h3 className="font-bold text-xl mt-2">{t("pressPublications.title")}</h3>
-          <p className="text-gray-400 text-sm mt-2">
-            {t("pressPublications.description")}
           </p>
         </div>
       </div>
