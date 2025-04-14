@@ -139,31 +139,15 @@ export default function ClientSection() {
 
             </div>
 
-            <div className="hidden md:flex flex-col py-4 mt-10">
-                <div className="hidden md:flex w-full flex-wrap justify-between md:justify-center md:gap-32 lg:gap-40">
-                    {["Fintech", "Salud", "Legaltech", "Logística", "Proptech", "Insurtech"].map((category, index) => (
-                        <Capsule key={index} label={category} />
-                    ))}
-                </div>
-            </div>
-
-            <div className="flex md:hidden flex-col py-4">
-                <div className="flex md:hidden w-full flex-wrap justify-between md:justify-center gap-4">
-                    {["Fintech", "Proptech", "Insurtech", "Salud"].map((category, index) => (
-                        <Capsule key={index} label={category} />
-                    ))}
-                </div>
-            </div>
-
             <motion.div
-                className="relative w-full overflow-hidden py-4"
+                className="relative w-full overflow-hidden pt-20"
             >
                 <motion.div
-                    className="flex gap-8"
+                    className="flex"
                     animate={{ x: ["0%", "-100%"] }}
                     transition={{
                         repeat: Infinity,
-                        duration: 20,
+                        duration: 30,
                         ease: "linear",
                     }}
                 >
@@ -173,16 +157,15 @@ export default function ClientSection() {
                         return (
                             <motion.div
                                 key={index}
-                                className={`flex-shrink-0 ${isCenter ? "scale-125" : "scale-100"
-                                    } transition-transform duration-900`}
+                                className={`flex-shrink-0 transition-transform duration-1000`}
                             >
-                                <div className="w-36 h-20 lg:w-72 lg:h-48 flex items-center justify-center py-12">
+                                <div className="w-36 h-20 lg:w-auto lg:h-56 flex items-center justify-center">
                                     <Image
                                         src={src}
                                         alt={`Client ${index}`}
-                                        width={190}
-                                        height={190}
-                                        className="object-fill rounded-lg"
+                                        width={220}
+                                        height={220}
+                                        className="object-fill"
                                     />
                                 </div>
 

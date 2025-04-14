@@ -38,7 +38,7 @@ export default function Navbar() {
 
       <Link href={`/${currentLanguage}`}>
         <img
-          src="/logo-black.svg"
+          src="/logo-black.png"
           alt="logo"
           className="w-auto h-16 dark:hidden" // Modo claro: Logo normal
         />
