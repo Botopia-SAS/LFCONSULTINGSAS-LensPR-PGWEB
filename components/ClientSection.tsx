@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-const images = [...Array(14)].map((_, i) => `/images/eventos/evento${i + 1}.png`);
+const images = [...Array(15)].map((_, i) => `/images/eventos/evento${i + 1}.png`);
 
 function Capsule({ label }: { label: string }) {
     return (
