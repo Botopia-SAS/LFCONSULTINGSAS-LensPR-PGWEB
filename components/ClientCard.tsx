@@ -14,13 +14,13 @@ export default function ClientCard({ item, text }: { item: any; text: string }) 
   return (
     <div className="bg-white dark:bg-zinc-800 rounded-lg shadow-lg p-4 flex flex-col hover:shadow-xl transform hover:scale-[1.02] transition duration-300">
       {item.media_url && (
-        <div className="w-full h-48 overflow-hidden bg-gray-100 dark:bg-zinc-700 flex items-center justify-center rounded-lg">
+        <div className="w-full h-48 overflow-hidden dark:bg-zinc-700 flex items-center justify-center rounded-lg">
           <img
             src={item.media_url}
             alt={item.name ?? "Client image"}
             width={300}
             height={300}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-fill rounded-lg"
           />
         </div>
       )}
