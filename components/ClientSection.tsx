@@ -66,9 +66,9 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="bg-black mx-6 shadow-md shadow-black grid grid-cols-4 grid-rows-4 gap-4 justify-items-center items-center"
+                    className="bg-black mx-2 px-2 shadow-md shadow-black grid grid-cols-5 grid-rows-4 gap-4 justify-items-center items-center"
                 >
-                    {[...Array(16)].map((_, index) => (
+                    {[...Array(20)].map((_, index) => (
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.2 }}
