@@ -45,7 +45,7 @@ export async function getClients(locale: string) {
     countryColumn = "country_spanish";
   }
 
-  const { data, error } = await supabase.from("clients").select("*");
+  const { data, error } = await supabase.from("clients").select("*").order("order_number", { ascending: true });
   if (error) {
     console.error("Error fetching clients:", error);
     return [];
