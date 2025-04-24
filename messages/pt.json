@@ -191,5 +191,47 @@
       "highlight": "Ousado e Inovador",
       "description": "Nossa equipe de design dá vida às ideias com uma estética única e poderosa."
     }
+  },
+  "Events": {
+  "Title": "Calendário de Eventos",
+  "Loading": "Carregando eventos...",
+  "NoEvents": "Nenhum evento encontrado",
+  "Filters": {
+    "Search": "Pesquisar por nome",
+    "Location": "Filtrar por local",
+    "Month": "Filtrar por mês",
+    "Price": "Filtrar por preço",
+    "Free": "Grátis",
+    "Paid": "Pago",
+    "Clear": "Limpar filtros"
+  },
+  "Months": {
+    "January": "Janeiro",
+    "February": "Fevereiro",
+    "March": "Março",
+    "April": "Abril",
+    "May": "Maio",
+    "June": "Junho",
+    "July": "Julho",
+    "August": "Agosto",
+    "September": "Setembro",
+    "October": "Outubro",
+    "November": "Novembro",
+    "December": "Dezembro"
+  },
+  "Language": {
+    "English": "Inglês",
+    "Spanish": "Espanhol"
+  },
+  "Table": {
+    "Event": "Evento",
+    "Location": "Local",
+    "Date": "Data",
+    "Price": "Preço",
+    "ViewSite": "Link",
+    "Button": "Ir para o evento",
+    "Cost": "Custo"
   }
+}
+
 }
