@@ -139,7 +139,7 @@ const Page = () => {
 
   return (
 
-    <div className="p-4 md:p-12">
+    <div className="md:p-12">
       <h1 className="text-3xl font-bold text-center mb-6 text-black">{t('Title')}</h1>
 
       {/* Filtro de meses */}
@@ -264,19 +264,19 @@ const Page = () => {
                       <td className="py-3 px-4 text-center">
                         <button
                           onClick={() => window.open(event['Enlace'], '_blank')}
-                          className="bg-orange-300 hover:bg-green-800 text-black font-medium text-lg py-2 px-4 rounded-lg shadow-md shadow-gray-400 transform transition-all duration-300 ease-in-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
+                          className="border !border-orange-300 shadow-sm hover:bg-green-800 text-gray-500 font-medium text-lg py-2 px-4 rounded-lg  transform transition-all duration-300 ease-in-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
                         >
                           {t('Table.Button')}
                         </button>
                       </td>
                       <td className="py-3 px-4 text-center">
                       {event['Precio'] === 'Gratis' && (
-                            <span className="relative text-orange-400 text-xl font-bold">
+                            <span className="relative text-orange-400 text-xl ">
                               {t('Filters.Free')}
                             </span>
                           )}
                           {event['Precio'] !== 'Gratis' && (
-                            <span className="relative text-black text-xl font-bold">
+                            <span className="relative text-black text-xl">
                               {t('Filters.Paid')}
                             </span>
                           )}
@@ -301,12 +301,12 @@ const Page = () => {
                       />
                     </div>
 
-                    <div className='bg-orange-500 rounded-full px-4 py-2 shadow-lg shadow-gray-400 mt-4 mb-4 items-center justify-center flex'>
+                    <div className='bg-orange-300 text-black text-lg rounded-full px-4 py-2 shadow-lg shadow-gray-400 mt-4 mb-4 items-center justify-center flex'>
                       <a
                         href={event['Enlace']}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white hover:underline font-bold flex flex-wrap px-4"
+                        className="text-black hover:underline font-bold flex flex-wrap px-4"
                       >{event['Nombre del Evento']}
                       </a>
                     </div>
