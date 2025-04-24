@@ -162,8 +162,8 @@ const Page = () => {
             key={month.value}
             onClick={() => setMonthFilter(month.value)}
             className={`px-3 py-2 rounded-full text-m font-medium shadow-md shadow-gray-400 ${monthFilter === month.value
-              ? 'bg-green-800 text-white scale-125 transition-all -translate-y-2 shadow-xl shadow-gray-700'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300 hover:scale-110 transition-all'
+              ? 'bg-orange-300 text-black scale-125 transition-all -translate-y-2 shadow-xl shadow-gray-700'
+              : 'bg-gray-200 text-black hover:bg-gray-400 hover:scale-110 transition-all'
               }`}
           >
             {month.label}
@@ -182,7 +182,7 @@ const Page = () => {
               placeholder={t('Filters.Search')}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
 
             {/* Filtrar por ubicación */}
@@ -191,14 +191,14 @@ const Page = () => {
               placeholder={t('Filters.Location')}
               value={locationFilter}
               onChange={(e) => setLocationFilter(e.target.value)}
-              className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
 
             {/* Filtrar por precio */}
             <select
               value={priceFilter}
               onChange={(e) => setPriceFilter(e.target.value)}
-              className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 bg-white"
+              className="border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 bg-white"
             >
               <option value="">{t('Filters.Price')}</option>
               <option value={t('Filters.Free')}>{t('Filters.Free')}</option>
@@ -209,7 +209,7 @@ const Page = () => {
             {/* Botón para quitar filtros */}
             <button
               onClick={clearFilters}
-              className=" bg-orange-500 border-l-orange-500 text-white rounded-full px-4 py-2 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-red-500"
+              className=" bg-orange-300 border-l-orange-500 text-black rounded-full px-4 py-2 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-red-500"
             >
               {t('Filters.Clear')}
             </button>
@@ -264,19 +264,19 @@ const Page = () => {
                       <td className="py-3 px-4 text-center">
                         <button
                           onClick={() => window.open(event['Enlace'], '_blank')}
-                          className="bg-orange-500 hover:bg-green-800 text-white font-medium text-lg py-2 px-4 rounded-lg shadow-md shadow-gray-400 transform transition-all duration-300 ease-in-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
+                          className="bg-orange-300 hover:bg-green-800 text-black font-medium text-lg py-2 px-4 rounded-lg shadow-md shadow-gray-400 transform transition-all duration-300 ease-in-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
                         >
                           {t('Table.Button')}
                         </button>
                       </td>
                       <td className="py-3 px-4 text-center">
                       {event['Precio'] === 'Gratis' && (
-                            <span className="relative text-green-700 text-xl font-bold">
+                            <span className="relative text-orange-400 text-xl font-bold">
                               {t('Filters.Free')}
                             </span>
                           )}
                           {event['Precio'] !== 'Gratis' && (
-                            <span className="relative text-cyan-400 text-xl font-bold">
+                            <span className="relative text-black text-xl font-bold">
                               {t('Filters.Paid')}
                             </span>
                           )}
