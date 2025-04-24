@@ -139,7 +139,7 @@ const Page = () => {
 
   return (
 
-    <div className=" p-12">
+    <div className="p-4 md:p-12">
       <h1 className="text-3xl font-bold text-center mb-6 text-black">{t('Title')}</h1>
 
       {/* Filtro de meses */}
