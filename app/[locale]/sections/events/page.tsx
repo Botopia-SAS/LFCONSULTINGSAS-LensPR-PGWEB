@@ -264,7 +264,7 @@ const Page = () => {
                       <td className="py-3 px-4 text-center">
                         <button
                           onClick={() => window.open(event['Enlace'], '_blank')}
-                          className="border !border-orange-300 shadow-sm hover:bg-green-800 text-gray-500 font-medium text-lg py-2 px-4 rounded-lg  transform transition-all duration-300 ease-in-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
+                          className="border !border-orange-300 shadow-sm hover:bg-orange-300 text-black text-lg py-2 px-4 rounded-lg  transform transition-all duration-300 ease-in-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
                         >
                           {t('Table.Button')}
                         </button>
