@@ -1,42 +1,4 @@
-
 import "./globals.css";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
-import ClientLayout from "@/components/ClientLayout";  // Componente cliente
-
-export const metadata = {
-  title: "LensPR",
-  description:
-    "Firma boutique de relaciones públicas especializada en el sector tecnología, startups y finanzas.",
-};
-
-export default async function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
-  const { locale } = params;
-  const messages = await getMessages({ locale });
-
-  return (
-    <html lang={locale}>
-      <head>
-        {/* tus <link> de Google Fonts */}
-      </head>
-      <body className="flex flex-col h-[100dvh] font-roboto bg-white dark:bg-zinc-900 dark:text-white">
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <ClientLayout>{children}</ClientLayout>
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
-}
-
-
-
-/* import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Navbar";
 import { NextIntlClientProvider } from "next-intl";
@@ -82,4 +44,3 @@ export default async function RootLayout({
     </NextIntlClientProvider>
   );
 }
- */
