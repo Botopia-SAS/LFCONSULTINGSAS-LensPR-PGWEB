@@ -30,10 +30,10 @@ const CredibilityStats = () => {
   const t = useTranslations("credibilityStats");
   
   const stats = [
-    { number: "50+", label: t("brands"), description: t("brandsDescription") },
+    { number: "70+", label: t("brands"), description: t("brandsDescription") },
     { number: "12", label: t("countries"), description: t("countriesDescription") },
-    { number: "400", label: t("events"), description: t("eventsDescription") },
-    { number: "700", label: t("publications"), description: t("publicationsDescription") },
+    { number: "500", label: t("events"), description: t("eventsDescription") },
+    { number: "1000", label: t("publications"), description: t("publicationsDescription") },
   ];
 
   return (
