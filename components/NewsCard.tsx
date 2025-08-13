@@ -38,32 +38,74 @@ export default function NewsCard({ item, text }: { item: any; text: string }) {
         )}
       </div>
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-lg">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto w-[95vw] sm:w-[90vw] md:w-[85vw] lg:w-full">
           <DialogHeader>
-            <DialogTitle className="text-lg font-bold">
+            <DialogTitle className="text-2xl md:text-3xl font-bold text-center mb-6">
               {item.title}
             </DialogTitle>
           </DialogHeader>
-          <div className="flex flex-col items-center gap-4">
-            {/* Imagen dentro del modal */}
+          
+          <div className="flex flex-col gap-6">
+            {/* Imagen dentro del modal con mejor tamaño */}
             {item.mediaUrl && (
-              <div className="w-full h-64 mb-10">
-                <img src={item.mediaUrl} alt={item.title ?? ""} />
+              <div className="w-full flex justify-center">
+                <div className="w-full max-w-3xl h-64 sm:h-80 md:h-96 overflow-hidden rounded-lg bg-gray-50 dark:bg-zinc-800">
+                  <img 
+                    src={item.mediaUrl} 
+                    alt={item.title ?? ""} 
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             )}
-            <p className="text-gray-700 dark:text-gray-300">
-              {item.description}
-            </p>
-            {item.news_link && (
-              <a
-                href={item.news_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 dark:text-blue-400"
-              >
-                {text}
-              </a>
-            )}
+            
+            {/* Contenido del artículo */}
+            <div className="space-y-4">
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed whitespace-pre-wrap">
+                  {item.description}
+                </p>
+              </div>
+              
+              {/* Editorial */}
+              {item.editorial && (
+                <div className="border-t pt-4">
+                  <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 italic font-medium">
+                    Editorial: {item.editorial}
+                  </p>
+                </div>
+              )}
+              
+              {/* Fecha */}
+              {item.createdAt && (
+                <div className="border-t pt-4">
+                  <p className="text-xs md:text-sm text-gray-500 dark:text-gray-500">
+                    Publicado: {new Date(item.createdAt).toLocaleDateString('es-ES', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </p>
+                </div>
+              )}
+              
+              {/* Link externo si existe */}
+              {item.news_link && (
+                <div className="border-t pt-4">
+                  <a
+                    href={item.news_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm md:text-base transition-colors"
+                  >
+                    📰 Leer artículo completo
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
         </DialogContent>
       </Dialog>

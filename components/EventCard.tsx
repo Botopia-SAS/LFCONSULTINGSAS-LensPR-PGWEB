@@ -47,10 +47,10 @@ export default function EventCard({
           </Button>
         )}
         <div className="grid grid-cols-2 gap-2 text-xs text-gray-500 dark:text-gray-400 italic">
-          {item.location && <p className="">{item.location}</p>}
-          {item.date_time && (
+          {item.location && <p className="truncate">{item.location}</p>}
+          {(item.start_date || item.date_time) && (
             <p className="">
-              {new Date(item.date_time).toLocaleDateString("en-US", {
+              {item.start_date || new Date(item.date_time).toLocaleDateString("es-ES", {
                 timeZone: "UTC",
                 month: "short",
                 day: "numeric",
@@ -58,10 +58,17 @@ export default function EventCard({
               })}
             </p>
           )}
-          {item.cost && <p className="">{item.cost}</p>}
-          {item.duration && (
+          {item.cost && <p className="truncate">{item.cost}</p>}
+          {(item.duration || item.time) && (
             <p className="">
-              {item.duration} {durationText}
+              {item.duration || item.time} {item.duration ? '' : durationText}
+            </p>
+          )}
+          {item.event_type && (
+            <p className="col-span-2 text-center bg-gray-100 dark:bg-zinc-700 rounded px-2 py-1">
+              {item.event_type === 'online' ? '🌐 Virtual' : 
+               item.event_type === 'hybrid' ? '🔗 Híbrido' : 
+               '📍 Presencial'}
             </p>
           )}
         </div>
@@ -83,7 +90,31 @@ export default function EventCard({
                 />
               </div>
             )}
-            <p className="text-gray-700 dark:text-gray-300">
+            <div className="flex flex-col gap-2 text-sm text-gray-600 dark:text-gray-400">
+              {item.location && (
+                <p><strong>📍 Ubicación:</strong> {item.location}</p>
+              )}
+              {(item.start_date || item.date_time) && (
+                <p><strong>📅 Fecha:</strong> {item.start_date || new Date(item.date_time).toLocaleDateString("es-ES")}</p>
+              )}
+              {item.duration && (
+                <p><strong>⏱️ Duración:</strong> {item.duration}</p>
+              )}
+              {item.cost && (
+                <p><strong>💰 Costo:</strong> {item.cost}</p>
+              )}
+              {item.event_type && (
+                <p><strong>📋 Tipo:</strong> {
+                  item.event_type === 'online' ? '🌐 Evento Virtual' : 
+                  item.event_type === 'hybrid' ? '🔗 Evento Híbrido' : 
+                  '📍 Evento Presencial'
+                }</p>
+              )}
+              {item.capacity && (
+                <p><strong>👥 Capacidad:</strong> {item.capacity} personas</p>
+              )}
+            </div>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               {item.description}
             </p>
             {item.register_link && (

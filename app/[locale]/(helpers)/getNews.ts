@@ -4,6 +4,7 @@ type NewsRow = {
   id: number;
   media_url: string | null;
   created_at: string;
+  client_id?: string | null;
   title_spanish?: string | null;
   description_spanish?: string | null;
   editorial_spanish?: string | null;
@@ -52,6 +53,50 @@ export async function getNewsByLocale(locale: string) {
     id: item.id,
     mediaUrl: item.media_url,
     createdAt: item.created_at,
+    clientId: item.client_id,
+    title: item[titleColumn] ?? "Título no disponible",
+    description: item[descriptionColumn] ?? "Descripción no disponible",
+    editorial: item[editorialColumn] ?? null, // Puede ser null si no existe
+  }));
+}
+
+export async function getNewsByClientId(clientId: string, locale: string) {
+  let titleColumn: keyof NewsRow,
+    descriptionColumn: keyof NewsRow,
+    editorialColumn: keyof NewsRow;
+
+  if (locale === "en") {
+    titleColumn = "title_english";
+    descriptionColumn = "description_english";
+    editorialColumn = "editorial_spanish";
+  } else if (locale === "pt") {
+    titleColumn = "title_portuguese";
+    descriptionColumn = "description_portuguese";
+    editorialColumn = "editorial_spanish";
+  } else {
+    // Por defecto 'es'
+    titleColumn = "title_spanish";
+    descriptionColumn = "description_spanish";
+    editorialColumn = "editorial_spanish";
+  }
+
+  // Obtener noticias filtradas por client_id
+  const { data, error } = await supabase
+    .from("news")
+    .select("*")
+    .eq("client_id", clientId);
+
+  if (error) {
+    console.error("Error fetching client news:", error);
+    return [];
+  }
+
+  // Mapear los datos de manera segura
+  return (data || []).map((item) => ({
+    id: item.id,
+    mediaUrl: item.media_url,
+    createdAt: item.created_at,
+    clientId: item.client_id,
     title: item[titleColumn] ?? "Título no disponible",
     description: item[descriptionColumn] ?? "Descripción no disponible",
     editorial: item[editorialColumn] ?? null, // Puede ser null si no existe

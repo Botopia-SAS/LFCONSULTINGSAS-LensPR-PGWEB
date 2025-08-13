@@ -40,9 +40,9 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="hidden md:grid grid-cols-5 grid-rows-4 gap-4 justify-items-center items-center"
+                    className="hidden md:grid grid-cols-5 grid-rows-5 gap-4 justify-items-center items-center"
                 >
-                    {[...Array(20)].map((_, index) => (
+                    {[...Array(25)].map((_, index) => (
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.2 }}
@@ -91,9 +91,9 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className=" grid mx-6 grid-cols-5 grid-rows-4 gap-4 justify-items-center items-center"
+                    className=" grid mx-6 grid-cols-5 grid-rows-5 gap-4 justify-items-center items-center"
                 >
-                    {[...Array(20)].map((_, index) => (
+                    {[...Array(25)].map((_, index) => (
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.2 }}
@@ -116,9 +116,9 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="md:hidden mx-4 grid grid-cols-4 grid-rows-4 gap-4 justify-items-center items-center"
+                    className="md:hidden mx-4 grid grid-cols-4 grid-rows-6 gap-4 justify-items-center items-center"
                 >
-                    {[...Array(16)].map((_, index) => (
+                    {[...Array(24)].map((_, index) => (
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.2 }}

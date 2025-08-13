@@ -21,10 +21,24 @@ export default function Navbar() {
   // Nuevo estado para el menú móvil
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // Estado para el efecto de scroll
+  const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const locale = pathname?.split("/")[1] || "es";
     setCurrentLanguage(locale);
   }, [pathname]);
+
+  // Efecto para detectar el scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const changeLanguage = (lang: string) => {
     if (lang !== currentLanguage && pathname) {
@@ -34,20 +48,28 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-around py-6 md:py-8 bg-white dark:bg-zinc-900 text-lg relative z-50 dark:text-white">
+    <nav className={`fixed top-0 left-0 right-0 flex items-center justify-around bg-white dark:bg-zinc-900 text-lg z-50 dark:text-white shadow-sm border-b border-gray-100 dark:border-zinc-800 transition-all duration-300 ease-in-out ${
+      isScrolled 
+        ? 'py-3 md:py-4 backdrop-blur-md bg-white/95 dark:bg-zinc-900/95' 
+        : 'py-6 md:py-8'
+    }`}>
 
       <Link href={`/${currentLanguage}`}>
         <img
           src="/logo-black.png"
           alt="logo"
-          className="w-auto h-16 dark:hidden" // Modo claro: Logo normal
+          className={`w-auto dark:hidden transition-all duration-300 ${
+            isScrolled ? 'h-12' : 'h-16'
+          }`} // Modo claro: Logo normal
         />
       </Link>
       <Link href={`/${currentLanguage}`}>
         <img
           src="/logo-white.svg"
           alt="logo"
-          className="w-auto h-16 hidden dark:block" // Modo oscuro: Logo blanco
+          className={`w-auto hidden dark:block transition-all duration-300 ${
+            isScrolled ? 'h-12' : 'h-16'
+          }`} // Modo oscuro: Logo blanco
         />
       </Link>
 
