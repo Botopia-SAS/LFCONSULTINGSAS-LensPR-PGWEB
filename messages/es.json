@@ -6,7 +6,8 @@
     "results": "Resultados",
     "awards": "Premios",
     "language": "ES",
-    "aboutUs": "Personalizado",
+    "aboutUs": "Sobre nosotros",
+    "tailorMade": "Personalizado",
     "services": "Servicios",
     "press": "Prensa",
     "events": "Eventos",
@@ -18,9 +19,9 @@
   },
   "about": {
     "title": "Sobre mí",
-    "text1": "Soy Laura Forero, emprendedora y relacionista pública apasionada en la creación de comunidades y fortalecimiento de ecosistemas para startups, fondos de VC y entidades públicas o privadas en Colombia y LATAM.",
-    "text2": "Con más de 9 años de experiencia en relaciones públicas, free press, producción de eventos de alto impacto, estrategias de comunicación y programas de alto impacto, he aprendido a entender en detalle las necesidades del sector tech y a llevar las marcas a otro nivel.",
-    "text3": "Soy cofundadora de Colombia Tech Week y líder activa de Wondertech Latam.",
+    "text1": "Soy Laura Forero, cofundadora de Colombia Tech Week, Tech Fest y Lens PR emprendedora y relacionista pública apasionada en la creación de comunidades, prensa, eventos y fortalecimiento de ecosistemas para startups, fondos de VC, financieras y entidades públicas o privadas en Colombia y LATAM.",
+    "text2": "Con más de 10 años de experiencia en relaciones públicas, estrategias de comunicación y programas de alto impacto en emprendimiento para gobierno, cooperación y empresas he aprendido a entender en detalle las necesidades del sector tech y a llevar las marcas a otro nivel.",
+    
     "lensPRInfo": {
       "title": "Más sobre LENS PR",
       "paragraph1": "LENS PR es agencia boutique de relaciones públicas especializada en el sector tech con operación en más +10 países de LATAM, US y España. Nos dedicamos a conectar founders, startups y fondos de VC con sus públicos o clientes a través de estrategias Tailor Made de prensa, comunicación, eventos de alto nivel y alianzas estratégicas.",

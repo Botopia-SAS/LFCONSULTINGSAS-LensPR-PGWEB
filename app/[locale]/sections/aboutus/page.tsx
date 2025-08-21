@@ -79,9 +79,7 @@ export default function AboutUsSection() {
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                 {t("text2")}
               </p>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                {t("text3")}
-              </p>
+             
             </div>
           </div>
         </div>

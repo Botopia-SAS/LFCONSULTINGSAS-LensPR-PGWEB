@@ -6,7 +6,7 @@ import EventsLuma from '@/components/EventsLuma';
 
 const Page = () => {
   // Cambiar esta variable para alternar entre componentes
-  const USE_LUMA = false; // false = Legacy API, true = Luma/Supabase
+  const USE_LUMA = true; // false = Legacy API, true = Luma/Supabase
 
   // Renderizar el componente correspondiente
   return USE_LUMA ? <EventsLuma /> : <EventsLegacy />;

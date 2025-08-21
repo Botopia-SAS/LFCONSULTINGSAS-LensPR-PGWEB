@@ -96,7 +96,17 @@ export default function Navbar() {
           </a>
         </li>
 
-        {/* CLIENTS (sin dropdown) */}
+        {/* CTW (nuevo botón) */}
+        <li>
+          <a
+            href={`/${currentLanguage}/sections/ctw`}
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            CTW
+          </a>
+        </li>
+
+        {/* PRESS */}
         <li>
           <a
             href={`/${currentLanguage}/sections/press`}
@@ -105,6 +115,8 @@ export default function Navbar() {
             {t("press")}
           </a>
         </li>
+        
+        {/* ABOUT US */}
         <li>
           <a
             href={`/${currentLanguage}/sections/aboutus`}
@@ -114,8 +126,14 @@ export default function Navbar() {
           </a>
         </li>
 
+        {/* TAILOR MADE */}
         <li>
-
+          <a
+            href={`/${currentLanguage}/sections/tailormade`}
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            {t("tailorMade")}
+          </a>
         </li>
       </ul>
 
@@ -244,6 +262,17 @@ export default function Navbar() {
               </a>
             </li>
 
+            {/* CTW (nuevo botón móvil) */}
+            <li>
+              <a
+                href={`/${currentLanguage}/sections/ctw`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                CTW
+              </a>
+            </li>
+
             {/* Press */}
             <li>
               <a
@@ -255,7 +284,7 @@ export default function Navbar() {
               </a>
             </li>
 
-            {/* Agency */}
+            {/* About Us */}
             <li>
               <a
                 href={`/${currentLanguage}/sections/aboutus`}
@@ -263,6 +292,17 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("aboutUs")}
+              </a>
+            </li>
+
+            {/* Tailor Made */}
+            <li>
+              <a
+                href={`/${currentLanguage}/sections/tailormade`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("tailorMade")}
               </a>
             </li>
 
