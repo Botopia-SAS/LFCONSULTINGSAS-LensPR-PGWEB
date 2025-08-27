@@ -137,13 +137,16 @@
     "messageLabel": "Mensaje",
     "messagePlaceholder": "¿En qué podemos ayudarte?",
     "sendButton": "Enviar",
+    "sendingButton": "Enviando...",
     "contactInfoTitle": "También puedes encontrarnos aquí",
     "contactInfoSubtitle": "Si prefieres hablar directamente o visitar nuestras oficinas, estos son nuestros datos de contacto:",
     "addressLabel": "Dirección",
     "addressValue": "CR 20 A 172 30, Bogotá, Colombia",
     "phoneLabel": "Teléfono",
     "phoneValue": "+57 301 6953041",
-    "emailValue": "info@lenspr.com"
+    "emailValue": "info@lenspr.com",
+    "successMessage": "¡Mensaje enviado exitosamente! Te contactaremos pronto.",
+    "errorMessage": "Hubo un error al enviar el mensaje. Por favor, intenta nuevamente."
   },
   "press": {
     "title": "Noticias",

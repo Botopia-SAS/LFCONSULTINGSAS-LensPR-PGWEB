@@ -1,12 +1,45 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useTranslations } from "next-intl";
-// Importamos algunos íconos de lucide-react
-import { MapPin, PhoneCall, Mail } from "lucide-react";
+import { MapPin, PhoneCall, Mail, CheckCircle, XCircle } from "lucide-react";
 
 export default function ContactSection() {
   const t = useTranslations("contact");
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState<{type: 'success' | 'error', text: string} | null>(null);
+
+  // URL del Google Apps Script desde las variables de entorno
+  const GOOGLE_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setMessage(null);
+
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const response = await fetch(GOOGLE_SCRIPT_URL!, {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+      
+      if (result.status === 'success') {
+        setMessage({ type: 'success', text: t('successMessage') });
+        (e.target as HTMLFormElement).reset();
+      } else {
+        throw new Error(result.message || 'Error desconocido');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setMessage({ type: 'error', text: t('errorMessage') });
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <section className="bg-white dark:bg-zinc-900 text-black dark:text-white py-8 px-4">
@@ -26,7 +59,23 @@ export default function ContactSection() {
               {t("formDescription")}
             </p>
 
-            <form action="https://formsubmit.co/laura@lenspr.com" method="POST" className="space-y-6">
+            {/* Mensaje de éxito/error */}
+            {message && (
+              <div className={`mb-4 p-3 rounded flex items-center gap-2 ${
+                message.type === 'success' 
+                  ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200' 
+                  : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
+              }`}>
+                {message.type === 'success' ? (
+                  <CheckCircle className="w-5 h-5" />
+                ) : (
+                  <XCircle className="w-5 h-5" />
+                )}
+                <span>{message.text}</span>
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit} className="space-y-6">
               {/* Nombre */}
               <div>
                 <label htmlFor="name" className="block mb-1 font-medium text-base">
@@ -39,6 +88,7 @@ export default function ContactSection() {
                   className="w-full border border-gray-300 dark:border-zinc-700 rounded py-2 px-4 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base"
                   placeholder={t("namePlaceholder")}
                   required
+                  disabled={isLoading}
                 />
               </div>
 
@@ -54,6 +104,7 @@ export default function ContactSection() {
                   className="w-full py-2 px-4 border border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base"
                   placeholder={t("emailPlaceholder")}
                   required
+                  disabled={isLoading}
                 />
               </div>
 
@@ -69,15 +120,21 @@ export default function ContactSection() {
                   className="w-full border py-2 px-4 border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base"
                   placeholder={t("messagePlaceholder")}
                   required
+                  disabled={isLoading}
                 ></textarea>
               </div>
 
               {/* Botón de envío */}
               <button
                 type="submit"
-                className="bg-black text-base dark:bg-white dark:text-black text-white font-semibold py-2 px-6 rounded hover:bg-orange-400 hover:text-black transition-colors"
+                disabled={isLoading}
+                className={`text-base font-semibold py-2 px-6 rounded transition-colors ${
+                  isLoading 
+                    ? 'bg-gray-400 text-gray-600 cursor-not-allowed' 
+                    : 'bg-black dark:bg-white dark:text-black text-white hover:bg-orange-400 hover:text-black'
+                }`}
               >
-                {t("sendButton")}
+                {isLoading ? t("sendingButton") : t("sendButton")}
               </button>
             </form>
           </div>

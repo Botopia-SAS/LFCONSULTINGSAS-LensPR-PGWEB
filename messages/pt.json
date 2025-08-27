@@ -137,13 +137,16 @@
     "messageLabel": "Mensagem",
     "messagePlaceholder": "Como podemos ajudar você?",
     "sendButton": "Enviar",
+    "sendingButton": "Enviando...",
     "contactInfoTitle": "Você Também Pode Nos Encontrar Aqui",
     "contactInfoSubtitle": "Se preferir falar diretamente ou visitar nosso escritório, aqui estão nossas informações de contato:",
     "addressLabel": "Endereço",
     "addressValue": "BRR LA URIBE CR 20 A 172 30, Bogotá, Colombia",
     "phoneLabel": "Telefone",
     "phoneValue": "+57 301 6953041",
-    "emailValue": "info@lenspr.com"
+    "emailValue": "info@lenspr.com",
+    "successMessage": "Mensagem enviada com sucesso! Entraremos em contato em breve.",
+    "errorMessage": "Houve um erro ao enviar a mensagem. Tente novamente."
   },
   "press": {
     "title": "Notícias",
