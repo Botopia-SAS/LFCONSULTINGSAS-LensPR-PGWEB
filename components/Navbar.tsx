@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 // Opcional: si quieres un ícono de hamburguesa y cierre:
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { ENABLE_CTW } from "@/config/features";
 
 export default function Navbar() {
   const t = useTranslations("header");
@@ -96,15 +97,17 @@ export default function Navbar() {
           </a>
         </li>
 
-        {/* CTW (nuevo botón) */}
-        <li>
-          <a
-            href={`/${currentLanguage}/sections/ctw`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-          >
-            CTW
-          </a>
-        </li>
+        {/* CTW (feature flag) */}
+        {ENABLE_CTW && (
+          <li>
+            <a
+              href={`/${currentLanguage}/sections/ctw`}
+              className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+            >
+              CTW
+            </a>
+          </li>
+        )}
 
         {/* PRESS */}
         <li>
@@ -262,16 +265,18 @@ export default function Navbar() {
               </a>
             </li>
 
-            {/* CTW (nuevo botón móvil) */}
-            <li>
-              <a
-                href={`/${currentLanguage}/sections/ctw`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                CTW
-              </a>
-            </li>
+            {/* CTW (feature flag móvil) */}
+            {ENABLE_CTW && (
+              <li>
+                <a
+                  href={`/${currentLanguage}/sections/ctw`}
+                  className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  CTW
+                </a>
+              </li>
+            )}
 
             {/* Press */}
             <li>
