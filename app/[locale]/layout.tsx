@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { hasBlogsAvailable } from "./(helpers)/getBlogs";
 
 export const metadata = {
   title: "LensPR",
@@ -19,6 +20,7 @@ export default async function RootLayout({
 }) {
   const { locale } = await params;
   const messages = await getMessages({ locale });
+  const showBlogInNav = await hasBlogsAvailable();
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
@@ -36,7 +38,7 @@ export default async function RootLayout({
           />
         </head>
         <body className="flex flex-col h-[100dvh] font-roboto bg-white dark:bg-zinc-900 dark:text-white">
-          <Header />
+          <Header showBlog={showBlogInNav} />
           <main className="flex-grow pt-20 md:pt-24">{children}</main>
           <Footer locale={locale} />
         </body>

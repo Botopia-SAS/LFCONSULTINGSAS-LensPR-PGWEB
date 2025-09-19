@@ -12,6 +12,7 @@
     "press": "Press",
     "events": "Events",
     "gallery": "Gallery",
+  "blog": "Blog",
     "contact": "Let's talk",
     "spanish": "Spanish",
     "english": "English",
@@ -124,6 +125,11 @@
     "address": "CR 20 A 172 30, Bogotá, Colombia",
     "phone": "+57 301 6953041",
     "email": "laura@lenspr.com"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Guides, insights and experiences from our team and community.",
+    "all": "All"
   },
   "contact": {
     "title": "Contact Us",

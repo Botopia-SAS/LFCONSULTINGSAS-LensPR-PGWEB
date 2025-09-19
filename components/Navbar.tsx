@@ -8,7 +8,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { ENABLE_CTW } from "@/config/features";
 
-export default function Navbar() {
+export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
   const t = useTranslations("header");
   const router = useRouter();
   const pathname = usePathname();
@@ -118,6 +118,18 @@ export default function Navbar() {
             {t("press")}
           </a>
         </li>
+
+        {/* BLOG */}
+        {showBlog && (
+          <li>
+            <a
+              href={`/${currentLanguage}/sections/blog`}
+              className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+            >
+              {t("blog")}
+            </a>
+          </li>
+        )}
         
         {/* ABOUT US */}
         <li>
@@ -288,6 +300,19 @@ export default function Navbar() {
                 {t("press")}
               </a>
             </li>
+
+            {/* Blog */}
+            {showBlog && (
+              <li>
+                <a
+                  href={`/${currentLanguage}/sections/blog`}
+                  className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {t("blog")}
+                </a>
+              </li>
+            )}
 
             {/* About Us */}
             <li>
