@@ -12,7 +12,7 @@
     "press": "Prensa",
     "events": "Eventos",
     "gallery": "Galería",
-  "blog": "Blog",
+    "blog": "Blog",
     "contact": "Contacto",
     "spanish": "Español",
     "english": "Inglés",
@@ -22,7 +22,7 @@
     "title": "Sobre mí",
     "text1": "Soy Laura Forero, cofundadora de Colombia Tech Week, Tech Fest y Lens PR emprendedora y relacionista pública apasionada en la creación de comunidades, prensa, eventos y fortalecimiento de ecosistemas para startups, fondos de VC, financieras y entidades públicas o privadas en Colombia y LATAM.",
     "text2": "Con más de 10 años de experiencia en relaciones públicas, estrategias de comunicación y programas de alto impacto en emprendimiento para gobierno, cooperación y empresas he aprendido a entender en detalle las necesidades del sector tech y a llevar las marcas a otro nivel.",
-    
+
     "lensPRInfo": {
       "title": "Más sobre LENS PR",
       "paragraph1": "LENS PR es agencia boutique de relaciones públicas especializada en el sector tech con operación en más +10 países de LATAM, US y España. Nos dedicamos a conectar founders, startups y fondos de VC con sus públicos o clientes a través de estrategias Tailor Made de prensa, comunicación, eventos de alto nivel y alianzas estratégicas.",
@@ -52,21 +52,21 @@
     "videoUrl": "/videos/video-hero.mp4"
   },
   "paragraph": {
-    "text": "Lens PR es una firma latinoamericana de Relaciones Públicas y Eventos comprometida con brindar el mejor servicio y calidad a nuestros clientes. Conectamos startups, empresas e inversionistas globales con sus audiencias a través de eventos, experiencias y prensa en más de 10 países y 12 industrias tecnológicas en América Latina, Estados Unidos y Europa.",
-    "letsConnect": "Agendar reunión",
+    "text": "En Lens PR vivimos el ecosistema. Somos la firma latinoamericana de PR y Eventos que ayuda a startups y fondos a hacerse notar donde importa: medios, inversionistas y comunidades. Creamos experiencias y conexiones en más de 10 países y 12 industrias tech en América Latina, Estados Unidos y Europa.",
+    "letsConnect": "Agendemos una reunión",
     "moreAboutUs": "MÁS SOBRE NOSOTROS"
   },
   "credibilityStats": {
     "title": "Con una perspectiva global",
     "subtitle": "Marcas internacionales confían en nosotros para entregar resultados.",
     "brands": "Marcas",
-    "brandsDescription": "En los últimos 3 años, hemos colaborado con más de 50 marcas locales y globales.",
+    "brandsDescription": "En solo 3 años hemos impulsado la visibilidad de más de 70 marcas locales y globales del ecosistema tech.",
     "countries": "Países",
-    "countriesDescription": "Trabajar en múltiples mercados ha fortalecido nuestra experiencia internacional.",
+    "countriesDescription": "Nuestra experiencia en 12 mercados nos permite conectar startups e inversionistas con alcance internacional.",
     "events": "Eventos",
-    "eventsDescription": "Nuestras experiencias han elevado a las marcas y sus audiencias clave en toda LATAM.",
+    "eventsDescription": "Hemos creado más de 500 experiencias que unen marcas con las audiencias que importan en toda LATAM.",
     "publications": "Publicaciones",
-    "publicationsDescription": "Contamos historias. Nuestros clientes tienen el contenido, nosotros lo publicamos."
+    "publicationsDescription": "Somos narradores del ecosistema: logramos que las historias de nuestros clientes aparezcan más de 1000 veces en medios clave."
   },
   "travelHospitality": {
     "headerTitle": "Logros e Industrias",
@@ -181,20 +181,20 @@
     "subtitle": "Y muchos más"
   },
   "loudSection": {
-    "title": "Nuestra Experiencia LensPR",
+    "title": "Hacemos que las marcas tech brillen en el ecosistema.",
     "subtitle": "Creando experiencias inmersivas para marcas y audiencias.",
     "corporateEvents": {
       "title": "Eventos y Experiencias",
-      "description": "Eventos y experiencias diseñados desde cero, comprendiendo las necesidades de la marca, su audiencia y su visibilidad."
+      "description": "Creamos experiencias que conectan, dejan huella y resultados."
     },
     "tailorMadeProjects": {
       "title": "Proyectos a Medida",
-      "description": "Desde la ideación hasta la ejecución, creamos soluciones personalizadas para necesidades únicas."
+      "description": " Soluciones únicas para marcas que piensan en grande.."
     },
     "pressPublications": {
       "category": "Prensa y Medios",
       "title": "Publicaciones y Artículos",
-      "description": "Nuestros clientes han aparecido en medios como Forbes, El Financiero, El Mercurio, Gestión, Semana y muchos más."
+      "description": "Tus historias en los medios que importan  ."
     },
     "creativeDesign": {
       "title": "Diseño Creativo",
@@ -239,8 +239,8 @@
       "Date": "Fecha",
       "Price": "Precio",
       "ViewSite": "Enlace",
-      "Button":"Ir al Evento",
-      "Cost":"Costo"
+      "Button": "Ir al Evento",
+      "Cost": "Costo"
     }
   }
 }
