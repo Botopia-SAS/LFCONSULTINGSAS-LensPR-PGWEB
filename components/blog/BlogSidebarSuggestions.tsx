@@ -1,21 +1,34 @@
-import React from 'react';
-import Link from 'next/link';
-import { BlogPost } from '@/lib/types/blog';
+import React from "react";
+import Link from "next/link";
+import { BlogPost } from "@/lib/types/blog";
 
-interface BlogSidebarSuggestionsProps { posts: BlogPost[]; currentSlug?: string; locale: string; }
+interface BlogSidebarSuggestionsProps {
+  posts: BlogPost[];
+  currentSlug?: string;
+  locale: string;
+}
 
-export function BlogSidebarSuggestions({ posts, currentSlug, locale }: BlogSidebarSuggestionsProps) {
-  const suggestions = posts.filter(p => p.slug !== currentSlug).slice(0,4);
+export function BlogSidebarSuggestions({
+  posts,
+  currentSlug,
+  locale,
+}: BlogSidebarSuggestionsProps) {
+  const suggestions = posts.filter((p) => p.slug !== currentSlug).slice(0, 4);
   if (!suggestions.length) return null;
 
   return (
-    <aside className="space-y-6">
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">Artículos relacionados</h3>
+    <aside className="space-y-6 sticky top-32 self-start">
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
+        Artículos relacionados
+      </h3>
 
       <div className="space-y-4">
         {suggestions.map((p) => (
           <article key={p.id} className="group">
-            <Link href={`/${locale}/sections/blog/${p.slug}`} className="block hover:bg-gray-50 dark:hover:bg-zinc-800/50 rounded-lg p-3 transition-colors duration-200">
+            <Link
+              href={`/${locale}/sections/blog/${p.slug}`}
+              className="block hover:bg-gray-50 dark:hover:bg-zinc-800/50 rounded-lg p-3 transition-colors duration-200"
+            >
               <div className="flex gap-3">
                 {p.coverImage && (
                   <div className="flex-shrink-0">

@@ -1,12 +1,30 @@
 // lib/supabaseClient.ts
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseUrl =
+  process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
+const supabaseKey =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
-  throw new Error('Missing Supabase environment variables. Please check your .env file.');
+  console.error("Environment variables:", {
+    NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL
+      ? "Set"
+      : "Missing",
+    SUPABASE_URL: process.env.SUPABASE_URL ? "Set" : "Missing",
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+      ? "Set"
+      : "Missing",
+    SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY ? "Set" : "Missing",
+  });
+  throw new Error(
+    "Missing Supabase environment variables. Please check your .env file."
+  );
 }
 
-// Esto se usa si vas a hacer llamadas desde el cliente (client-side)
-export const supabase = createClient(supabaseUrl, supabaseKey);
+// Cliente Supabase que funciona tanto en cliente como servidor
+export const supabase = createClient(supabaseUrl, supabaseKey, {
+  auth: {
+    persistSession: false, // Para server-side rendering
+  },
+});
