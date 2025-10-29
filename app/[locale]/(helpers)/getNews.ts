@@ -5,6 +5,7 @@ type NewsRow = {
   media_url: string | null;
   created_at: string;
   client_id?: string | null;
+  order_number?: number | null;
   title_spanish?: string | null;
   description_spanish?: string | null;
   editorial_spanish?: string | null;
@@ -40,8 +41,11 @@ export async function getNewsByLocale(locale: string) {
     editorialColumn = "editorial_spanish";
   }
 
-  // Obtener todos los datos y manejar la ausencia de columnas
-  const { data, error } = await supabase.from("news").select("*"); // Seleccionamos todas las columnas
+  // Obtener todos los datos y manejar la ausencia de columnas, ordenados por order_number
+  const { data, error } = await supabase
+    .from("news")
+    .select("*")
+    .order("order_number", { ascending: true }); // Ordenar por order_number de menor a mayor
 
   if (error) {
     console.error("Error fetching news:", error);
@@ -80,11 +84,12 @@ export async function getNewsByClientId(clientId: string, locale: string) {
     editorialColumn = "editorial_spanish";
   }
 
-  // Obtener noticias filtradas por client_id
+  // Obtener noticias filtradas por client_id, ordenadas por order_number
   const { data, error } = await supabase
     .from("news")
     .select("*")
-    .eq("client_id", clientId);
+    .eq("client_id", clientId)
+    .order("order_number", { ascending: true }); // Ordenar por order_number de menor a mayor
 
   if (error) {
     console.error("Error fetching client news:", error);

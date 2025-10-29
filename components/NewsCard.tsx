@@ -31,11 +31,9 @@ export default function NewsCard({ item, text }: { item: any; text: string }) {
         <p className="text-xs text-gray-500 dark:text-gray-400 italic">
           {item.editorial}
         </p>
-        {item.description.length > 150 && (
-          <Button variant="link" onClick={() => setOpen(true)}>
-            {text}
-          </Button>
-        )}
+        <Button variant="link" onClick={() => setOpen(true)}>
+          {text}
+        </Button>
       </div>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto w-[95vw] sm:w-[90vw] md:w-[85vw] lg:w-full">
