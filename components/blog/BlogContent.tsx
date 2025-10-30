@@ -15,7 +15,7 @@ export function BlogContent({ content, className, mode = 'auto' }: BlogContentPr
   if (mode === 'html' || (mode === 'auto' && hasHtmlTags(content))) {
     return (
       <div
-        className={cn('prose dark:prose-invert max-w-none', className)}
+        className={cn('prose dark:prose-invert max-w-none blog-content-html', className)}
         dangerouslySetInnerHTML={{ __html: content }}
       />
     );

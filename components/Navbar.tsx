@@ -37,8 +37,8 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
       setIsScrolled(scrollTop > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const changeLanguage = (lang: string) => {
@@ -49,18 +49,19 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 flex items-center justify-around bg-white dark:bg-zinc-900 text-lg z-50 dark:text-white shadow-sm border-b border-gray-100 dark:border-zinc-800 transition-all duration-300 ease-in-out ${
-      isScrolled 
-        ? 'py-3 md:py-4 backdrop-blur-md bg-white/95 dark:bg-zinc-900/95' 
-        : 'py-6 md:py-8'
-    }`}>
-
+    <nav
+      className={`fixed top-0 left-0 right-0 flex items-center justify-around bg-white dark:bg-zinc-900 text-lg z-50 dark:text-white shadow-sm border-b border-gray-100 dark:border-zinc-800 transition-all duration-300 ease-in-out ${
+        isScrolled
+          ? "py-3 md:py-4 backdrop-blur-md bg-white/95 dark:bg-zinc-900/95"
+          : "py-6 md:py-8"
+      }`}
+    >
       <Link href={`/${currentLanguage}`}>
         <img
           src="/logo-black.png"
           alt="logo"
           className={`w-auto dark:hidden transition-all duration-300 ${
-            isScrolled ? 'h-12' : 'h-16'
+            isScrolled ? "h-12" : "h-16"
           }`} // Modo claro: Logo normal
         />
       </Link>
@@ -69,86 +70,83 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           src="/logo-white.svg"
           alt="logo"
           className={`w-auto hidden dark:block transition-all duration-300 ${
-            isScrolled ? 'h-12' : 'h-16'
+            isScrolled ? "h-12" : "h-16"
           }`} // Modo oscuro: Logo blanco
         />
       </Link>
 
       {/* Menú principal (desktop) */}
       <ul className="hidden md:flex space-x-14 text-2xl">
-
         {/* CLIENTS (sin dropdown) */}
         <li>
-          <a
+          <Link
             href={`/${currentLanguage}/sections/clients`}
             className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("clients")}
-          </a>
+          </Link>
         </li>
 
         {/* CLIENTS (sin dropdown) */}
         <li>
-          <a
+          <Link
             href={`/${currentLanguage}/sections/events`}
             className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("events")}
-          </a>
+          </Link>
         </li>
 
         {/* CTW (feature flag) */}
         {ENABLE_CTW && (
           <li>
-            <a
+            <Link
               href={`/${currentLanguage}/sections/ctw`}
               className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
             >
               CTW
-            </a>
+            </Link>
           </li>
         )}
 
         {/* PRESS */}
         <li>
-          <a
+          <Link
             href={`/${currentLanguage}/sections/press`}
             className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("press")}
-          </a>
+          </Link>
         </li>
 
-        {/* BLOG */}
-        {showBlog && (
-          <li>
-            <a
-              href={`/${currentLanguage}/sections/blog`}
-              className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-            >
-              {t("blog")}
-            </a>
-          </li>
-        )}
-        
+        {/* BLOG (mostrada siempre) */}
+        <li>
+          <Link
+            href={`/${currentLanguage}/sections/blog`}
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            {t("blog")}
+          </Link>
+        </li>
+
         {/* ABOUT US */}
         <li>
-          <a
+          <Link
             href={`/${currentLanguage}/sections/aboutus`}
             className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("aboutUs")}
-          </a>
+          </Link>
         </li>
 
         {/* TAILOR MADE */}
         <li>
-          <a
+          <Link
             href={`/${currentLanguage}/sections/tailormade`}
             className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("tailorMade")}
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -182,28 +180,31 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 </svg>
               </li>
               <li
-                className={`rounded-lg mx-2 ${currentLanguage === "es"
-                  ? "bg-black text-white"
-                  : "hover:bg-gray-100 dark:hover:bg-gray-700"
-                  } px-4 py-2`}
+                className={`rounded-lg mx-2 ${
+                  currentLanguage === "es"
+                    ? "bg-black text-white"
+                    : "hover:bg-gray-100 dark:hover:bg-gray-700"
+                } px-4 py-2`}
                 onClick={() => changeLanguage("es")}
               >
                 {t("spanish")}
               </li>
               <li
-                className={`rounded-lg mx-2 ${currentLanguage === "en"
-                  ? "bg-black text-white"
-                  : "hover:bg-gray-100 dark:hover:bg-gray-700"
-                  } px-4 py-2`}
+                className={`rounded-lg mx-2 ${
+                  currentLanguage === "en"
+                    ? "bg-black text-white"
+                    : "hover:bg-gray-100 dark:hover:bg-gray-700"
+                } px-4 py-2`}
                 onClick={() => changeLanguage("en")}
               >
                 {t("english")}
               </li>
               <li
-                className={`rounded-lg mx-2 mb-2 ${currentLanguage === "pt"
-                  ? "bg-black text-white"
-                  : "hover:bg-gray-100 dark:hover:bg-gray-700"
-                  } px-4 py-2`}
+                className={`rounded-lg mx-2 mb-2 ${
+                  currentLanguage === "pt"
+                    ? "bg-black text-white"
+                    : "hover:bg-gray-100 dark:hover:bg-gray-700"
+                } px-4 py-2`}
                 onClick={() => changeLanguage("pt")}
               >
                 {t("portuguese")}
@@ -225,9 +226,12 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
         className="md:hidden text-gray-700 dark:text-white mx-4"
         onClick={() => setIsMobileMenuOpen((prev) => !prev)}
       >
-        {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        {isMobileMenuOpen ? (
+          <X className="w-6 h-6" />
+        ) : (
+          <Menu className="w-6 h-6" />
+        )}
       </button>
-
 
       {/* Menú Móvil */}
       {isMobileMenuOpen && (
@@ -235,105 +239,103 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           <ul className="flex flex-col space-y-4">
             {/* Home */}
             <li>
-              <a
+              <Link
                 href={`/${currentLanguage}`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("home")}
-              </a>
+              </Link>
             </li>
 
             {/* Services */}
             <li>
-              <a
+              <Link
                 href={`/${currentLanguage}/sections/services`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("services")}
-              </a>
+              </Link>
             </li>
 
             {/* Clients */}
             <li>
-              <a
+              <Link
                 href={`/${currentLanguage}/sections/clients`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("clients")}
-              </a>
+              </Link>
             </li>
 
             {/* Events */}
             <li>
-              <a
+              <Link
                 href={`/${currentLanguage}/sections/events`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("events")}
-              </a>
+              </Link>
             </li>
 
             {/* CTW (feature flag móvil) */}
             {ENABLE_CTW && (
               <li>
-                <a
+                <Link
                   href={`/${currentLanguage}/sections/ctw`}
                   className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   CTW
-                </a>
+                </Link>
               </li>
             )}
 
             {/* Press */}
             <li>
-              <a
+              <Link
                 href={`/${currentLanguage}/sections/press`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("press")}
-              </a>
+              </Link>
             </li>
 
-            {/* Blog */}
-            {showBlog && (
-              <li>
-                <a
-                  href={`/${currentLanguage}/sections/blog`}
-                  className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {t("blog")}
-                </a>
-              </li>
-            )}
+            {/* Blog (mostrada siempre) */}
+            <li>
+              <Link
+                href={`/${currentLanguage}/sections/blog`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("blog")}
+              </Link>
+            </li>
 
             {/* About Us */}
             <li>
-              <a
+              <Link
                 href={`/${currentLanguage}/sections/aboutus`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("aboutUs")}
-              </a>
+              </Link>
             </li>
 
             {/* Tailor Made */}
             <li>
-              <a
+              <Link
                 href={`/${currentLanguage}/sections/tailormade`}
                 className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("tailorMade")}
-              </a>
+              </Link>
             </li>
 
             {/* Language */}
@@ -343,10 +345,11 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
               </p>
               <div className="flex space-x-2">
                 <button
-                  className={`px-3 py-1 rounded ${currentLanguage === "es"
-                    ? "bg-black text-white"
-                    : "bg-gray-100 dark:bg-zinc-800"
-                    }`}
+                  className={`px-3 py-1 rounded ${
+                    currentLanguage === "es"
+                      ? "bg-black text-white"
+                      : "bg-gray-100 dark:bg-zinc-800"
+                  }`}
                   onClick={() => {
                     changeLanguage("es");
                     setIsMobileMenuOpen(false);
@@ -355,10 +358,11 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                   {t("spanish")}
                 </button>
                 <button
-                  className={`px-3 py-1 rounded ${currentLanguage === "en"
-                    ? "bg-black text-white"
-                    : "bg-gray-100 dark:bg-zinc-800"
-                    }`}
+                  className={`px-3 py-1 rounded ${
+                    currentLanguage === "en"
+                      ? "bg-black text-white"
+                      : "bg-gray-100 dark:bg-zinc-800"
+                  }`}
                   onClick={() => {
                     changeLanguage("en");
                     setIsMobileMenuOpen(false);
@@ -367,10 +371,11 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                   {t("english")}
                 </button>
                 <button
-                  className={`px-3 py-1 rounded ${currentLanguage === "pt"
-                    ? "bg-black text-white"
-                    : "bg-gray-100 dark:bg-zinc-800"
-                    }`}
+                  className={`px-3 py-1 rounded ${
+                    currentLanguage === "pt"
+                      ? "bg-black text-white"
+                      : "bg-gray-100 dark:bg-zinc-800"
+                  }`}
                   onClick={() => {
                     changeLanguage("pt");
                     setIsMobileMenuOpen(false);

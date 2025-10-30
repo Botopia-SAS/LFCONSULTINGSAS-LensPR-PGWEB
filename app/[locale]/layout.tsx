@@ -20,7 +20,23 @@ export default async function RootLayout({
 }) {
   const { locale } = await params;
   const messages = await getMessages({ locale });
-  const showBlogInNav = await hasBlogsAvailable();
+  // Intent: mostrar la pestaña de Blog en el header cuando haya blogs publicados.
+  // Pero si la comprobación contra Supabase falla por entorno (dev) o no hay blogs
+  // queremos permitir mostrar la pestaña de todas formas para facilitar el flujo
+  // de trabajo. Por eso usamos un fallback a `true` cuando ocurra un error.
+  let showBlogInNav = true;
+  try {
+    const available = await hasBlogsAvailable();
+    // Si explicitamente no hay blogs, por ahora dejamos la pestaña visible
+    // para que el enlace funcione y la funcionalidad pueda ser testeada.
+    showBlogInNav = available ?? true;
+  } catch (err) {
+    console.error(
+      "Error comprobando disponibilidad de blogs, mostrando la pestaña por defecto",
+      err
+    );
+    showBlogInNav = true;
+  }
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
