@@ -119,15 +119,17 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           </Link>
         </li>
 
-        {/* BLOG (mostrada siempre) */}
-        <li>
-          <Link
-            href={`/${currentLanguage}/sections/blog`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-          >
-            {t("blog")}
-          </Link>
-        </li>
+        {/* BLOG */}
+        {showBlog && (
+          <li>
+            <Link
+              href={`/${currentLanguage}/sections/blog`}
+              className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+            >
+              {t("blog")}
+            </Link>
+          </li>
+        )}
 
         {/* ABOUT US */}
         <li>
@@ -305,16 +307,18 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
               </Link>
             </li>
 
-            {/* Blog (mostrada siempre) */}
-            <li>
-              <Link
-                href={`/${currentLanguage}/sections/blog`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("blog")}
-              </Link>
-            </li>
+            {/* Blog */}
+            {showBlog && (
+              <li>
+                <Link
+                  href={`/${currentLanguage}/sections/blog`}
+                  className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {t("blog")}
+                </Link>
+              </li>
+            )}
 
             {/* About Us */}
             <li>
