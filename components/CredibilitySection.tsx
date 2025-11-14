@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 
 const Counter = ({ value }: { value: string }) => {
   const [count, setCount] = useState(0);
+  const hasPrefix = value.startsWith("+");
 
   useEffect(() => {
     let start = 0;
@@ -23,17 +24,30 @@ const Counter = ({ value }: { value: string }) => {
     return () => clearInterval(timer);
   }, [value]);
 
-  return <span>{count}{value.includes("+") ? "+" : ""}</span>;
+  return (
+    <span>
+      {hasPrefix ? "+" : ""}
+      {count}
+    </span>
+  );
 };
 
 const CredibilityStats = () => {
   const t = useTranslations("credibilityStats");
-  
+
   const stats = [
-    { number: "70+", label: t("brands"), description: t("brandsDescription") },
-    { number: "12", label: t("countries"), description: t("countriesDescription") },
+    { number: "+70", label: t("brands"), description: t("brandsDescription") },
+    {
+      number: "12",
+      label: t("countries"),
+      description: t("countriesDescription"),
+    },
     { number: "500", label: t("events"), description: t("eventsDescription") },
-    { number: "1000", label: t("publications"), description: t("publicationsDescription") },
+    {
+      number: "+1500",
+      label: t("publications"),
+      description: t("publicationsDescription"),
+    },
   ];
 
   return (
@@ -50,7 +64,9 @@ const CredibilityStats = () => {
               viewport={{ once: true }}
             >
               <div className="flex flex-col dark:bg-zinc-900 text-left py-4">
-                <span className="text-7xl font-semibold"><Counter value={stat.number} /></span>
+                <span className="text-7xl font-semibold">
+                  <Counter value={stat.number} />
+                </span>
                 <hr className="bg-gray-500 w-full" />
                 <h3 className="text-xl font-semibold mt-4">{stat.label}</h3>
                 <p className="text-gray-500 text-sm mr-6">{stat.description}</p>

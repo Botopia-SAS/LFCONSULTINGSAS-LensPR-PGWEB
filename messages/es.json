@@ -6,7 +6,7 @@
     "results": "Resultados",
     "awards": "Premios",
     "language": "ES",
-    "aboutUs": "Sobre nosotros",
+    "aboutUs": "Nosotros",
     "tailorMade": "Personalizado",
     "services": "Servicios",
     "press": "Prensa",
@@ -124,7 +124,8 @@
     "bottom": "Todos los derechos reservados.",
     "address": "CR 20 A 172 30, Bogotá, Colombia",
     "phone": "+57 301 6953041",
-    "email": "laura@lenspr.com"
+    "email": "laura@lenspr.com",
+    "scheduleButton": "Agenda una cita"
   },
   "blog": {
     "title": "Blog",
@@ -185,16 +186,16 @@
     "subtitle": "Creando experiencias inmersivas para marcas y audiencias.",
     "corporateEvents": {
       "title": "Eventos y Experiencias",
-      "description": "Creamos experiencias que conectan, dejan huella y resultados."
+      "description": "Creamos eventos que conectan, dejan huella y resultados. Conferencias - Festivales - Cócteles - Lanzamientos."
     },
     "tailorMadeProjects": {
       "title": "Proyectos a Medida",
-      "description": " Soluciones únicas para marcas que piensan en grande.."
+      "description": "Soluciones únicas para marcas que piensan en grande. Tu lo sueñas, nosotros lo creamos. Programas - Charlas - Coaching - Mentorías."
     },
     "pressPublications": {
       "category": "Prensa y Medios",
-      "title": "Publicaciones y Artículos",
-      "description": "Tus historias en los medios que importan  ."
+      "title": "Prensa y Medios",
+      "description": "Tus historias publicadas en los medios mas relevantes. Estrategias de freepress en todo Latinoámerica, Europa y Estados Unidos."
     },
     "creativeDesign": {
       "title": "Diseño Creativo",

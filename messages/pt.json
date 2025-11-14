@@ -12,7 +12,7 @@
     "press": "Imprensa",
     "events": "Eventos",
     "gallery": "Galeria",
-  "blog": "Blog",
+    "blog": "Blog",
     "contact": "Contato",
     "spanish": "Espanhol",
     "english": "Inglês",
@@ -22,7 +22,7 @@
     "title": "Sobre Mim",
     "text1": "Eu sou Laura Forero, cofundadora da Colombia Tech Week, Tech Fest e Lens PR empreendedora e especialista em relações públicas apaixonada pela criação de comunidades, imprensa, eventos e fortalecimento de ecossistemas para startups, fundos de VC, instituições financeiras e entidades públicas ou privadas na Colômbia e na América Latina.",
     "text2": "Com mais de 10 anos de experiência em relações públicas, estratégias de comunicação e programas de alto impacto em empreendedorismo para governo, cooperação e empresas, aprendi a entender detalhadamente as necessidades do setor tech e a levar as marcas para um novo patamar.",
-    
+
     "lensPRInfo": {
       "title": "Mais sobre a LENS PR",
       "paragraph1": "A LENS PR é uma agência boutique de relações públicas especializada no setor de tecnologia, com operações em mais de 10 países na América Latina, nos EUA e na Espanha. Conectamos fundadores, startups e fundos de VC com seus públicos ou clientes por meio de estratégias tailor-made de imprensa, comunicação, eventos de alto nível e alianças estratégicas.",
@@ -110,11 +110,11 @@
     }
   },
   "footer": {
-    "ctaTitle": "Mantenha-se Conectado Conosco",
+    "ctaTitle": "Fique Conectado Conosco",
     "ctaSubtitle": "Junte-se à nossa comunidade e não perca nenhuma atualização",
-    "ctaButton": "Assine Agora",
+    "ctaButton": "Inscreva-se Agora",
     "brand": "Lens PR",
-    "brandDescription": "Lens PR se compromete a oferecer o melhor serviço e qualidade.",
+    "brandDescription": "A Lens PR está comprometida em oferecer o melhor serviço e qualidade.",
     "quickLinks": "Links Rápidos",
     "about": "Sobre Nós",
     "services": "Serviços",
@@ -122,9 +122,10 @@
     "blog": "Blog",
     "followUs": "Siga-nos",
     "bottom": "Todos os direitos reservados.",
-    "address": "CR 20 A 172 30, Bogotá, Colombia",
+    "address": "CR 20 A 172 30, Bogotá, Colômbia",
     "phone": "+57 301 6953041",
-    "email": "laura@lenspr.com"
+    "email": "laura@lenspr.com",
+    "scheduleButton": "Agendar uma reunião"
   },
   "blog": {
     "title": "Blog",
@@ -185,16 +186,16 @@
     "subtitle": "Criando experiências imersivas para marcas e públicos.",
     "corporateEvents": {
       "title": "Eventos e Experiências",
-      "description": "Eventos e experiências desenvolvidos do zero, entendendo as necessidades da marca, seu público e sua visibilidade."
+      "description": "Criamos eventos que conectam, deixam marca e trazem resultados. Conferências - Festivais - Coquetéis - Lançamentos."
     },
     "tailorMadeProjects": {
       "title": "Projetos Sob Medida",
-      "description": "Da idealização à execução, criamos soluções personalizadas para necessidades únicas."
+      "description": "Soluções únicas para marcas que pensam grande. Você sonha, nós criamos. Programas - Palestras - Coaching - Mentorias."
     },
     "pressPublications": {
       "category": "Imprensa & Mídia",
       "title": "Imprensa & Mídia",
-      "description": "Nossos clientes já foram destaque em meios como Forbes, El Financiero, El Mercurio, Gestão, Semana e muitos outros."
+      "description": "Suas histórias publicadas nas mídias mais relevantes. Estratégias de assessoria de imprensa em toda América Latina, Europa e Estados Unidos."
     },
     "creativeDesign": {
       "title": "Design Criativo",
@@ -203,45 +204,44 @@
     }
   },
   "Events": {
-  "Title": "Calendário de Eventos",
-  "Loading": "Carregando eventos...",
-  "NoEvents": "Nenhum evento encontrado",
-  "Filters": {
-    "Search": "Pesquisar por nome",
-    "Location": "Filtrar por local",
-    "Month": "Filtrar por mês",
-    "Price": "Filtrar por preço",
-    "Free": "Grátis",
-    "Paid": "Pago",
-    "Clear": "Limpar filtros"
-  },
-  "Months": {
-    "January": "Janeiro",
-    "February": "Fevereiro",
-    "March": "Março",
-    "April": "Abril",
-    "May": "Maio",
-    "June": "Junho",
-    "July": "Julho",
-    "August": "Agosto",
-    "September": "Setembro",
-    "October": "Outubro",
-    "November": "Novembro",
-    "December": "Dezembro"
-  },
-  "Language": {
-    "English": "Inglês",
-    "Spanish": "Espanhol"
-  },
-  "Table": {
-    "Event": "Evento",
-    "Location": "Local",
-    "Date": "Data",
-    "Price": "Preço",
-    "ViewSite": "Link",
-    "Button": "Ir para o evento",
-    "Cost": "Custo"
+    "Title": "Calendário de Eventos",
+    "Loading": "Carregando eventos...",
+    "NoEvents": "Nenhum evento encontrado",
+    "Filters": {
+      "Search": "Pesquisar por nome",
+      "Location": "Filtrar por local",
+      "Month": "Filtrar por mês",
+      "Price": "Filtrar por preço",
+      "Free": "Grátis",
+      "Paid": "Pago",
+      "Clear": "Limpar filtros"
+    },
+    "Months": {
+      "January": "Janeiro",
+      "February": "Fevereiro",
+      "March": "Março",
+      "April": "Abril",
+      "May": "Maio",
+      "June": "Junho",
+      "July": "Julho",
+      "August": "Agosto",
+      "September": "Setembro",
+      "October": "Outubro",
+      "November": "Novembro",
+      "December": "Dezembro"
+    },
+    "Language": {
+      "English": "Inglês",
+      "Spanish": "Espanhol"
+    },
+    "Table": {
+      "Event": "Evento",
+      "Location": "Local",
+      "Date": "Data",
+      "Price": "Preço",
+      "ViewSite": "Link",
+      "Button": "Ir para o evento",
+      "Cost": "Custo"
+    }
   }
-}
-
 }

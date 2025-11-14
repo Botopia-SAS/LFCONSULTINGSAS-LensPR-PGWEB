@@ -61,7 +61,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           src="/logo-black.png"
           alt="logo"
           className={`w-auto dark:hidden transition-all duration-300 ${
-            isScrolled ? "h-12" : "h-16"
+            isScrolled ? "h-16" : "h-20"
           }`} // Modo claro: Logo normal
         />
       </Link>
@@ -70,14 +70,34 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           src="/logo-white.svg"
           alt="logo"
           className={`w-auto hidden dark:block transition-all duration-300 ${
-            isScrolled ? "h-12" : "h-16"
+            isScrolled ? "h-16" : "h-20"
           }`} // Modo oscuro: Logo blanco
         />
       </Link>
 
       {/* Menú principal (desktop) */}
       <ul className="hidden md:flex space-x-14 text-2xl">
-        {/* CLIENTS (sin dropdown) */}
+        {/* NOSOTROS / ABOUT US */}
+        <li>
+          <Link
+            href={`/${currentLanguage}/sections/aboutus`}
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            {t("aboutUs")}
+          </Link>
+        </li>
+
+        {/* SERVICIOS */}
+        <li>
+          <Link
+            href={`/${currentLanguage}/sections/services`}
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            {t("services")}
+          </Link>
+        </li>
+
+        {/* CLIENTES */}
         <li>
           <Link
             href={`/${currentLanguage}/sections/clients`}
@@ -87,7 +107,17 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           </Link>
         </li>
 
-        {/* CLIENTS (sin dropdown) */}
+        {/* PRENSA */}
+        <li>
+          <Link
+            href={`/${currentLanguage}/sections/press`}
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            {t("press")}
+          </Link>
+        </li>
+
+        {/* EVENTOS */}
         <li>
           <Link
             href={`/${currentLanguage}/sections/events`}
@@ -108,48 +138,6 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
             </Link>
           </li>
         )}
-
-        {/* PRESS */}
-        <li>
-          <Link
-            href={`/${currentLanguage}/sections/press`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-          >
-            {t("press")}
-          </Link>
-        </li>
-
-        {/* BLOG */}
-        {showBlog && (
-          <li>
-            <Link
-              href={`/${currentLanguage}/sections/blog`}
-              className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-            >
-              {t("blog")}
-            </Link>
-          </li>
-        )}
-
-        {/* ABOUT US */}
-        <li>
-          <Link
-            href={`/${currentLanguage}/sections/aboutus`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-          >
-            {t("aboutUs")}
-          </Link>
-        </li>
-
-        {/* TAILOR MADE */}
-        <li>
-          <Link
-            href={`/${currentLanguage}/sections/tailormade`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-          >
-            {t("tailorMade")}
-          </Link>
-        </li>
       </ul>
 
       {/* Botones de Language y Contact (desktop) */}
@@ -249,8 +237,17 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 {t("home")}
               </Link>
             </li>
-
-            {/* Services */}
+            {/* Nosotros / About Us */}
+            <li>
+              <Link
+                href={`/${currentLanguage}/sections/aboutus`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("aboutUs")}
+              </Link>
+            </li>
+            {/* Servicios */}
             <li>
               <Link
                 href={`/${currentLanguage}/sections/services`}
@@ -260,8 +257,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 {t("services")}
               </Link>
             </li>
-
-            {/* Clients */}
+            {/* Clientes */}
             <li>
               <Link
                 href={`/${currentLanguage}/sections/clients`}
@@ -271,8 +267,17 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 {t("clients")}
               </Link>
             </li>
-
-            {/* Events */}
+            {/* Prensa */}
+            <li>
+              <Link
+                href={`/${currentLanguage}/sections/press`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("press")}
+              </Link>
+            </li>
+            {/* Eventos */}
             <li>
               <Link
                 href={`/${currentLanguage}/sections/events`}
@@ -282,7 +287,6 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 {t("events")}
               </Link>
             </li>
-
             {/* CTW (feature flag móvil) */}
             {ENABLE_CTW && (
               <li>
@@ -294,54 +298,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                   CTW
                 </Link>
               </li>
-            )}
-
-            {/* Press */}
-            <li>
-              <Link
-                href={`/${currentLanguage}/sections/press`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("press")}
-              </Link>
-            </li>
-
-            {/* Blog */}
-            {showBlog && (
-              <li>
-                <Link
-                  href={`/${currentLanguage}/sections/blog`}
-                  className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {t("blog")}
-                </Link>
-              </li>
-            )}
-
-            {/* About Us */}
-            <li>
-              <Link
-                href={`/${currentLanguage}/sections/aboutus`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("aboutUs")}
-              </Link>
-            </li>
-
-            {/* Tailor Made */}
-            <li>
-              <Link
-                href={`/${currentLanguage}/sections/tailormade`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("tailorMade")}
-              </Link>
-            </li>
-
+            )}{" "}
             {/* Language */}
             <li className="pt-2 border-t border-gray-200 dark:border-zinc-700">
               <p className="text-gray-700 dark:text-white font-semibold mb-2">
@@ -389,7 +346,6 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 </button>
               </div>
             </li>
-
             {/* Contact */}
             <li className="pt-4">
               <button

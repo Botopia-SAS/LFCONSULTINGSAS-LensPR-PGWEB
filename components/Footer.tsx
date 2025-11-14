@@ -79,8 +79,20 @@ export default function Footer({ locale }: { locale: string }) {
         </div>
 
         {/* Línea Divisoria Inferior */}
-        <div className="border-t border-gray-300 dark:border-gray-700 pt-6 text-center text-sm text-gray-600 dark:text-gray-400">
-          © {new Date().getFullYear()} {t("brand")}. {t("bottom")}
+        <div className="border-t border-gray-300 dark:border-gray-700 pt-6">
+          <div className="flex items-center justify-between">
+            <div className="text-sm text-gray-600 dark:text-gray-400">
+              © {new Date().getFullYear()} {t("brand")}. {t("bottom")}
+            </div>
+            <Link
+              href="https://calendly.com/laura-lenspr/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 text-sm font-medium text-white bg-black rounded-full hover:bg-white hover:text-black hover:border hover:border-black transition-all duration-300"
+            >
+              {t("scheduleButton")}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

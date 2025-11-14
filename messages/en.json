@@ -12,7 +12,7 @@
     "press": "Press",
     "events": "Events",
     "gallery": "Gallery",
-  "blog": "Blog",
+    "blog": "Blog",
     "contact": "Let's talk",
     "spanish": "Spanish",
     "english": "English",
@@ -22,7 +22,7 @@
     "title": "About Us",
     "text1": "I am Laura Forero, co-founder of Colombia Tech Week, Tech Fest and Lens PR entrepreneur and public relations professional passionate about creating communities, press, events and strengthening ecosystems for startups, VC funds, financial institutions and public or private entities in Colombia and LATAM.",
     "text2": "With over 10 years of experience in public relations, communication strategies and high-impact entrepreneurship programs for government, cooperation and companies, I have learned to understand in detail the needs of the tech sector and take brands to the next level.",
-    
+
     "lensPRInfo": {
       "title": "More about LENS PR",
       "paragraph1": "LENS PR is a boutique public relations agency specialized in the tech sector with operations in over 10 countries in LATAM, the US, and Spain. We connect founders, startups, and VC funds with their audiences or clients through tailor-made press, communication, high-level events, and strategic alliances.",
@@ -111,7 +111,7 @@
   },
   "footer": {
     "ctaTitle": "Stay Connected with Us",
-    "ctaSubtitle": "Join our community and never miss an update",
+    "ctaSubtitle": "Join our community and don't miss any updates",
     "ctaButton": "Subscribe Now",
     "brand": "Lens PR",
     "brandDescription": "Lens PR is committed to delivering the best service and quality.",
@@ -124,7 +124,8 @@
     "bottom": "All rights reserved.",
     "address": "CR 20 A 172 30, Bogotá, Colombia",
     "phone": "+57 301 6953041",
-    "email": "laura@lenspr.com"
+    "email": "laura@lenspr.com",
+    "scheduleButton": "Schedule a meeting"
   },
   "blog": {
     "title": "Blog",
@@ -167,7 +168,7 @@
   "clientSection": {
     "title": "They trust us",
     "contactButton": "Join today"
-},
+  },
   "events": {
     "title": "Events",
     "noEvents": "No events available",
@@ -179,21 +180,22 @@
     "title": "They trusted us",
     "cta": "I want to be part of LENS PR",
     "subtitle": "And many more"
-  }, "loudSection": {
+  },
+  "loudSection": {
     "title": "Our LensPR Experience",
     "subtitle": "Creating immersive experiences for brands and audiences.",
     "corporateEvents": {
       "title": "Events & Experiences",
-      "description": "Events and experiences designed from scratch understanding the brand needs, audience and visibility."
+      "description": "We create events that connect, leave a mark and deliver results. Conferences - Festivals - Cocktails - Launches."
     },
     "tailorMadeProjects": {
       "title": "Tailor-Made Projects",
-      "description": "We build tech solutions, we operate acceleration programs, we create demo days, we connect people."
+      "description": "Unique solutions for brands that think big. You dream it, we create it. Programs - Talks - Coaching - Mentorships."
     },
     "pressPublications": {
-      "category": "Free press & Media",
-      "title": "Free Press & Media",
-      "description": "Our clients have been featured on media outlets such as Forbes, El Financiero, El Mercurio, Gestión, Semana and many more."
+      "category": "Press & Media",
+      "title": "Press & Media",
+      "description": "Your stories published in the most relevant media. Free press strategies across Latin America, Europe and the United States."
     },
     "creativeDesign": {
       "title": "Creative Design",
@@ -202,45 +204,45 @@
     }
   },
   "Events": {
-        "Title": "Event Calendar",
-        "Loading": "Loading events...",
-        "NoEvents": "No events found",
-        "Filters": {
-            "Search": "Search by name",
-            "Location": "Filter by location",
-            "Month": "Filter by month",
-            "Price": "Filter by price",
-            "Free": "Free",
-            "Paid": "Paid",
-            "Clear": "Clear filters"
-        },
-        "Months": {
-            "January": "January",
-            "February": "February",
-            "March": "March",
-            "April": "April",
-            "May": "May",
-            "June": "June",
-            "July": "July",
-            "August": "August",
-            "September": "September",
-            "October": "October",
-            "November": "November",
-            "December": "December"
-        },
-        "Language": {
-            "English": "English",
-            "Spanish": "Spanish"
-        },
-        "Table": {
-            "Event": "Event",
-            "Location": "Location",
-            "Date": "Date",
-            "Price": "Price",
-            "Actions": "Actions",
-            "ViewSite": "Event Site",
-            "Button": "Go to event",
-            "Cost":"Ticket"
-        }
+    "Title": "Event Calendar",
+    "Loading": "Loading events...",
+    "NoEvents": "No events found",
+    "Filters": {
+      "Search": "Search by name",
+      "Location": "Filter by location",
+      "Month": "Filter by month",
+      "Price": "Filter by price",
+      "Free": "Free",
+      "Paid": "Paid",
+      "Clear": "Clear filters"
+    },
+    "Months": {
+      "January": "January",
+      "February": "February",
+      "March": "March",
+      "April": "April",
+      "May": "May",
+      "June": "June",
+      "July": "July",
+      "August": "August",
+      "September": "September",
+      "October": "October",
+      "November": "November",
+      "December": "December"
+    },
+    "Language": {
+      "English": "English",
+      "Spanish": "Spanish"
+    },
+    "Table": {
+      "Event": "Event",
+      "Location": "Location",
+      "Date": "Date",
+      "Price": "Price",
+      "Actions": "Actions",
+      "ViewSite": "Event Site",
+      "Button": "Go to event",
+      "Cost": "Ticket"
     }
+  }
 }

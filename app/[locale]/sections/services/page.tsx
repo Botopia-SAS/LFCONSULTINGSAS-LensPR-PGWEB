@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+// import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type GalleryItem = {
   src: string;
@@ -39,13 +39,13 @@ export default function ServicesSection() {
   const maxIndex = galleryItems.length - slidesToShow;
 
   // Funciones para navegar en el carrusel
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+  // };
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
-  };
+  // const nextSlide = () => {
+  //   setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+  // };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
@@ -97,9 +97,7 @@ export default function ServicesSection() {
                       height={280}
                       className="rounded-lg shadow-lg object-cover w-full transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div
-                      className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-60 text-center p-4 opacity-0 group-hover:opacity-100 transition duration-300"
-                    >
+                    <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-60 text-center p-4 opacity-0 group-hover:opacity-100 transition duration-300">
                       <h4 className="text-lg font-bold text-white uppercase">
                         {item.title}
                       </h4>
@@ -114,7 +112,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Navegación del carrusel: Flechas */}
-          <div className="flex justify-center mt-4 space-x-4">
+          {/* <div className="flex justify-center mt-4 space-x-4">
             <button
               onClick={prevSlide}
               className="bg-white dark:bg-gray-700 text-black dark:text-white px-4 py-2 rounded shadow hover:bg-orange-400 dark:hover:bg-orange-400 transition"
@@ -127,7 +125,7 @@ export default function ServicesSection() {
             >
               <ChevronRight className="w-5 h-5" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
